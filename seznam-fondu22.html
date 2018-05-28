@@ -1,0 +1,1671 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq Seznam fondů</title>
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="breadcrumb">
+    <div class="container">
+        <div class="rcrumbs">
+            <ul>
+                
+                        <li><a href="http://www3.conseq.cz/homepage.aspx" id="cphBody_usrBreadcrumbNavigation_rptBreadcrumbNavigation_aLink_0">Homepage</a><span id="cphBody_usrBreadcrumbNavigation_rptBreadcrumbNavigation_spnDivider_0" class="divider">/</span></li>
+                    
+                        <li><a href="http://www3.conseq.cz/investice.aspx" id="cphBody_usrBreadcrumbNavigation_rptBreadcrumbNavigation_aLink_1">Investice</a><span id="cphBody_usrBreadcrumbNavigation_rptBreadcrumbNavigation_spnDivider_1" class="divider">/</span></li>
+                    
+                        <li>Přehled fondů</li>
+                    
+            </ul>
+        </div>
+    </div>
+</div>
+    
+
+<div class="bg-blue">
+    <div class="container">
+        <h1>Přehled fondů</h1>
+
+<p>Na t&eacute;to str&aacute;nce&nbsp;m&aacute;te k dispozici kompletn&iacute; seznam fondů v na&scaron;&iacute; nab&iacute;dce.&nbsp;Pro lep&scaron;&iacute; orientaci v jejich nab&iacute;dce můžete použ&iacute;t filtry,&nbsp;označovat si &quot;obl&iacute;ben&eacute;&quot; fondy hvězdickou či vz&aacute;jemně&nbsp;je&nbsp;porovn&aacute;vat. V&yacute;konnost fondů si můžete nechat zobrazit buď v jejich z&aacute;kladn&iacute; měně, nebo po přepoč&iacute;t&aacute;n&iacute; do V&aacute;mi zvolen&eacute; měny. V takov&eacute;m př&iacute;padě v&yacute;konnost zahrnuje tak&eacute; změnu měnov&eacute;ho kurzu z&aacute;kladn&iacute; měny fondu proti V&aacute;mi zvolen&eacute; měně.</p>
+<hr />
+    </div>
+</div>
+    <input type="hidden" name="ctl00$cphBody$usrFundList$hdnFavorite" id="cphBody_usrFundList_hdnFavorite" value="star-checkbox checked" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnNoFavourite" id="cphBody_usrFundList_hdnNoFavourite" value="star-checkbox" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnSelect" id="cphBody_usrFundList_hdnSelect" value="input-checkbox checked" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnNoSelect" id="cphBody_usrFundList_hdnNoSelect" value="input-checkbox" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnCompareWithPaginator" id="cphBody_usrFundList_hdnCompareWithPaginator" value="btn btn-white btn-compare btn-border-black hidden-md hidden-lg" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnCompareNoPaginator" id="cphBody_usrFundList_hdnCompareNoPaginator" value="btn btn-white btn-compare btn-border-black hidden-md hidden-lg no-paginator" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnWithPaginator" id="cphBody_usrFundList_hdnWithPaginator" value="total-items" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$hdnWithoutPaginator" id="cphBody_usrFundList_hdnWithoutPaginator" value="total-items no-paginator" />
+<div class="bg-blue">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlInvestmentCompanyFilter">Investiční společnost</label>
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title='Investiční společnost'></a>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlInvestmentCompanyFilter" id="cphBody_usrFundList_ddlInvestmentCompanyFilter" class="form-control form-control-select">
+	<option selected="selected" value="0">Vyberte</option>
+	<option value="58373">Aberdeen Global Services S.A.</option>
+	<option value="309894">ACCOLADE FUND SICAV p.l.c</option>
+	<option value="95812">Allianz Global Investors Luxembourg S.A.,</option>
+	<option value="265192">Amundi Funds</option>
+	<option value="71447">BlackRock (Luxembourg) S.A.</option>
+	<option value="29367">BNP Paribas L1</option>
+	<option value="23055">Conseq Funds investičn&#237; společnost, a.s.</option>
+	<option value="1227">CONSEQ INVEST Plc</option>
+	<option value="50869">C-QUADRAT Investment AG</option>
+	<option value="50547">C-QUADRAT Kapitalanlage AG</option>
+	<option value="37364">Credit Suisse Asset Management Fund Services (Luxembourg) S.A.</option>
+	<option value="221048">ČESK&#221; FOND SICAV p.l.c.</option>
+	<option value="227168">Fidelity Funds</option>
+	<option value="265193">First Eagle Amundi</option>
+	<option value="1611">Franklin Templeton Investments</option>
+	<option value="528">Generali Investments CEE, investičn&#237; společnost, a.s.</option>
+	<option value="364942">Generali Investments SICAV</option>
+	<option value="197748">Generali PPF Invest plc</option>
+	<option value="62494">HSBC Global Investment Funds</option>
+	<option value="45130">NN (L)  </option>
+	<option value="5545">PARVEST</option>
+	<option value="89675">Pioneer Asset Management S.A.</option>
+	<option value="98891">QI investičn&#237; společnost, a.s.</option>
+	<option value="148228">Raiffeisen Kapitalanlage-Gesellschaft m.b.H.</option>
+	<option value="55">WOOD &amp; Company investičn&#237; společnost, a. s.</option>
+
+</select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlAssetClassFilter">Třída aktiv</label>
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title='Třída aktiv'></a>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlAssetClassFilter" id="cphBody_usrFundList_ddlAssetClassFilter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+	<option value="ASC_EQTY">Akcie</option>
+	<option value="ASC_ALTER">Alternativn&#237; investice</option>
+	<option value="ASC_BOND">Dluhopisy</option>
+	<option value="ASC_COMDTY">Komodity</option>
+	<option value="ASC_SHORT">Kr&#225;tkodob&#233; investice</option>
+	<option value="ASC_RE">Nemovitosti</option>
+	<option value="ASC_MIX">Sm&#237;šen&#225; aktiva</option>
+
+</select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlCurrencyFilter">Měna fondu</label>
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title='Měna fondu'></a>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlCurrencyFilter" id="cphBody_usrFundList_ddlCurrencyFilter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+	<option value="AUD">AUD</option>
+	<option value="CZK">CZK</option>
+	<option value="EUR">EUR</option>
+	<option value="GBP">GBP</option>
+	<option value="CHF">CHF</option>
+	<option value="JPY">JPY</option>
+	<option value="PLN">PLN</option>
+	<option value="USD">USD</option>
+
+</select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlRiskFactorFilter">Rizikový faktor</label>
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title='Rizikový faktor'></a>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlRiskFactorFilter" id="cphBody_usrFundList_ddlRiskFactorFilter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+	<option value="RISC_PROF1">Rizikov&#253; profil 1</option>
+	<option value="RISC_PROF2">Rizikov&#253; profil 2</option>
+	<option value="RISC_PROF3">Rizikov&#253; profil 3</option>
+	<option value="RISC_PROF4">Rizikov&#253; profil 4</option>
+	<option value="RISC_PROF5">Rizikov&#253; profil 5</option>
+	<option value="RISC_PROF6">Rizikov&#253; profil 6</option>
+	<option value="RISC_PROF7">Rizikov&#253; profil 7</option>
+
+</select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row hidden" id="detailed-search">
+            <!--<div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlRegionalFocusFilter">Regionální zaměření 1</label>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlRegionalFocusFilter" id="cphBody_usrFundList_ddlRegionalFocusFilter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+	<option value="RE1_EM">Rozv&#237;jej&#237;c&#237; se trhy</option>
+	<option value="RE1_CEE">Středoevropsk&#253; region</option>
+	<option value="RE1_DM_EM">Vyspěl&#233; i rozv&#237;jej&#237;c&#237; se trhy</option>
+	<option value="RE1_DM">Vyspěl&#233; trhy</option>
+
+</select>
+                    </div>
+                </div>
+            </div>-->
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlRegionalFocus2Filter">Regionální zaměření</label>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlRegionalFocus2Filter" id="cphBody_usrFundList_ddlRegionalFocus2Filter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+	<option value="RE2_ASIA">Asie - Tichomoř&#237;</option>
+	<option value="RE2_ASIAXJ">Asie (bez Japonska)</option>
+	<option value="RE2_EUROPE">Evropa</option>
+	<option value="RE2_GLO_EM">Glob&#225;ln&#237; rozv&#237;jej&#237;c&#237; se trhy</option>
+	<option value="RE2_GLO_DM">Glob&#225;ln&#237; vyspěl&#233; trhy</option>
+	<option value="RE2_GLOBAL">Glob&#225;ln&#237;
+</option>
+	<option value="RE2_JAPAN">Japonsko</option>
+	<option value="RE2_LAT_AM">Latinsk&#225; amerika</option>
+	<option value="RE2_OTH_EM">Ostatn&#237; rozv&#237;jej&#237;c&#237; se trhy</option>
+	<option value="RE2_OTH_DM">Ostatn&#237; vyspěl&#233; trhy</option>
+	<option value="RE2_N_AM">Severn&#237; amerika</option>
+	<option value="RE2_CEE">Středoevropsk&#253; region</option>
+	<option value="RE2_EE">V&#253;chodn&#237; evropa</option>
+
+</select>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlSectoralFocusFilter">Sektorové zaměření</label>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlSectoralFocusFilter" id="cphBody_usrFundList_ddlSectoralFocusFilter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+
+</select>
+                    </div>
+                </div>
+            </div>-->
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$ddlThemeFilter">Téma</label>
+                    <div class="select-wrapper">
+                        <select name="ctl00$cphBody$usrFundList$ddlThemeFilter" id="cphBody_usrFundList_ddlThemeFilter" class="form-control form-control-select">
+	<option selected="selected" value="">Vyberte</option>
+	<option value="THM_ABSRET">Absolutn&#237;ho v&#253;nosu</option>
+	<option value="THM_BALANC">Balancovan&#233;</option>
+	<option value="THM_AGGREG">Bez omezen&#237;</option>
+	<option value="THM_PMETAL">Drah&#253;ch kovů</option>
+	<option value="THM_DYNAM">Dynamick&#233;</option>
+	<option value="THM_ENERGY">Energetick&#233;</option>
+	<option value="THM_EXOTIC">Exotick&#233;</option>
+	<option value="THM_FLEX">Flexibiln&#237;</option>
+	<option value="THM_FNDFND">Fond Fondů</option>
+	<option value="THM_HRDCUR">Hlavn&#237; měny</option>
+	<option value="THM_VALUE">Hodnotov&#233;</option>
+	<option value="THM_PROTEC">Chr&#225;něn&#233;</option>
+	<option value="THM_INFLLN">Inflačně indexovan&#233;</option>
+	<option value="THM_IGRADE">Investičn&#237; stupeň (IG)</option>
+	<option value="THM_CORE">J&#225;drov&#233;</option>
+	<option value="THM_CONVER">Konvertibiln&#237;</option>
+	<option value="THM_CONSER">Konzervativn&#237;</option>
+	<option value="THM_COBOND">Korpor&#225;tn&#237; dluhopisy</option>
+	<option value="THM_LOCCUR">Lok&#225;ln&#237; měny</option>
+	<option value="THM_CURNCY">Měnově zaměřen&#233;</option>
+	<option value="THM_RESTAT">Nemovitostn&#237;</option>
+	<option value="THM_GROWTH">Růstov&#233;</option>
+	<option value="THM_TARG_M">S c&#237;lov&#253;m datem</option>
+	<option value="THM_CZK">S dominantn&#237; měnou (CZK)</option>
+	<option value="THM_EUR">S dominantn&#237; měnou (EUR)</option>
+	<option value="THM_PLN">S dominantn&#237; měnou (PLN)</option>
+	<option value="THM_USD">S dominantn&#237; měnou (USD)</option>
+	<option value="THM_SM_CAP">S n&#237;zkou a středn&#237; tržn&#237; kapitalizac&#237;</option>
+	<option value="THM_MTICAP">S různou tržn&#237; kapitalizac&#237;</option>
+	<option value="THM_L_CAP">S vysokou tržn&#237; kapitalizac&#237;</option>
+	<option value="THM_SECTOR">Sektorov&#233;</option>
+	<option value="THM_CNTRY">Specifick&#225; země</option>
+	<option value="THM_GOBOND">St&#225;tn&#237; dluhopisy</option>
+	<option value="THM_THEME">T&#233;maticky zaměřen&#233;</option>
+	<option value="THM_HYIELD">Vysok&#253; v&#253;nos (HY)</option>
+
+</select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="form-item">
+                    <label for="ctl00$cphBody$usrFundList$txtNameISINFilter">Název fondu / ISIN</label>
+                    <div class="select-wrapper">
+                        <input name="ctl00$cphBody$usrFundList$txtNameISINFilter" type="text" id="cphBody_usrFundList_txtNameISINFilter" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                        <input name="ctl00$cphBody$usrFundList$chkFavouriteOnly" type="checkbox" id="cphBody_usrFundList_chkFavouriteOnly" class="form-control form-control-checkbox" />
+                        <label class="form-label" for="cphBody_usrFundList_chkFavouriteOnly"><span></span>Zobrazit oblíbené</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="extended-search">
+                    <a class="more-link" href="javascript:void(null)" onclick="toggler('detailed-search');">Zobrazit rozšířené hledání</a>
+                </div>
+            </div>
+            <div class="col-sm-offset-6 col-sm-6 col-md-offset-0 col-md-3">
+                <input type="submit" name="ctl00$cphBody$usrFundList$btnFilter" value="Filtrovat" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$btnFilter&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphBody_usrFundList_btnFilter" class="btn btn-blue full-width" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="separator-empty"></div>
+<div class="container">
+    <div class="row">
+        <input type="hidden" name="ctl00$cphBody$usrFundList$hdfTabs" id="cphBody_usrFundList_hdfTabs" value="#1a" />
+        <div class="col-md-9">
+            <a href="#" class="nav-tabs-dropdown xxs"></a>
+            <ul id="myTab" class="tabs-3 nav nav-pills nav-tabs-wrapper xxs">
+                <li>
+                    <div class="tabs-3-tab">
+                        <a data-toggle="tab" href="#1a" onclick="document.getElementById('cphBody_usrFundList_hdfTabs').value = '#1a';">Obecné informace<span class="tabs-3-arrow"></span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tabs-3-tab">
+                        <a data-toggle="tab" href="#2a" onclick="document.getElementById('cphBody_usrFundList_hdfTabs').value = '#2a';">Výkonnost fondů<span class="tabs-3-arrow"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 hidden-xs hidden-sm">
+            <input type="submit" name="ctl00$cphBody$usrFundList$btnCompare" value="Porovnat" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$btnCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphBody_usrFundList_btnCompare" class="btn btn-white btn-compare full-width btn-border-black big-text" />
+        </div>
+        <div class="tab-content clearfix">
+            <div class="tab-pane" id="1a">
+                <div class="sorting-combo hidden-md hidden-lg">
+                    <div class="form-item">
+                        <div class="select-wrapper">
+                            <select name="ctl00$cphBody$usrFundList$ddlSortBy" id="cphBody_usrFundList_ddlSortBy" class="form-control form-control-select">
+	<option value="0">Neřadit</option>
+	<option value="1">N&#225;zev</option>
+	<option value="6">Měna</option>
+	<option value="8">Cena za kus</option>
+	<option value="13">Datum platnosti ceny</option>
+	<option value="14">1M&amp;nbsp;(%)</option>
+	<option value="15">3M&amp;nbsp;(%)</option>
+	<option value="16">6M&amp;nbsp;(%)</option>
+	<option value="17">1R&amp;nbsp;(%)</option>
+	<option value="18">3R&amp;nbsp;(%)</option>
+	<option value="19">5R&amp;nbsp;(%)</option>
+	<option value="20">10R&amp;nbsp;(%)</option>
+	<option value="21">Od poč&#225;tku</option>
+
+</select>
+                        </div>
+                    </div>
+                    <input type="submit" name="ctl00$cphBody$usrFundList$btnSort" value="Řadit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$btnSort&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphBody_usrFundList_btnSort" class="sorting-combo-btn" />
+                </div>
+                <div>
+	<table class="fund-table responsive-table" cellspacing="0" rules="all" border="1" id="cphBody_usrFundList_grvFunds" style="border-collapse:collapse;">
+		<tr class="table-header">
+			<th scope="col">&nbsp;</th><th class="name" scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByName" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByName&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Název</a></th><th scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByISIN" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByISIN&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">ISIN</a></th><th scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByEmitentCompany" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByEmitentCompany&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Investiční společnost</a></th><th scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByAssetClass" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByAssetClass&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Třída aktiv</a></th><th scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByCurrencyCode" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByCurrencyCode&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Měna</a></th><th scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByRegionalFocus2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByRegionalFocus2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Regionální zaměření</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByTER" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByTER&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">TER</a></th><th class="risk" scope="col"><a id="cphBody_usrFundList_grvFunds_lnbHeaderSortByRiskFactor" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl01$lnbHeaderSortByRiskFactor&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Rizikový faktor</a></th><th class="hidden-md hidden-lg" scope="col">&nbsp;</th><th scope="col">&nbsp;</th>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_0" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl02$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1462'>Aberdeen Global - Asia Pacific Equity (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl02$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_0" value="1462" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0566486402</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie - Tichomoří</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,07&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl02$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_hdfValue_0" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl02$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_hdfActiveClass_0" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl02$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_hdfNoActiveClass_0" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn1_0" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn2_0" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn3_0" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn4_0" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn5_0" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn6_0" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_0_spn7_0" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_0" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl02$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_1" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl03$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1441'>Aberdeen Global - Asia Pacific Equity (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl03$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_1" value="1441" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0011963245</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie - Tichomoří</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,01&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl03$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_hdfValue_1" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl03$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_hdfActiveClass_1" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl03$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_hdfNoActiveClass_1" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn1_1" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn2_1" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn3_1" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn4_1" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn5_1" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn6_1" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_1_spn7_1" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_1" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl03$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_2" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl04$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1465'>Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl04$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_2" value="1465" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0619785693</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisy</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie - Tichomoří</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,42&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl04$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_hdfValue_2" value="RISC_PROF3" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl04$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_hdfActiveClass_2" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl04$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_hdfNoActiveClass_2" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn1_2" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn2_2" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn3_2" class="active">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn4_2" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn5_2" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn6_2" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_2_spn7_2" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_2" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl04$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_3" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl05$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1444'>Aberdeen Global - Asian Local Currency Short Duration Bond (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl05$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_3" value="1444" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0094548533</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisy</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie - Tichomoří</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,31&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl05$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_hdfValue_3" value="RISC_PROF3" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl05$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_hdfActiveClass_3" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl05$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_hdfNoActiveClass_3" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn1_3" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn2_3" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn3_3" class="active">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn4_3" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn5_3" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn6_3" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_3_spn7_3" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_3" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl05$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_4" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl06$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1451'>Aberdeen Global - Asian Property Share (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl06$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_4" value="1451" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0476875603</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie - Tichomoří</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,93&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl06$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_hdfValue_4" value="RISC_PROF5" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl06$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_hdfActiveClass_4" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl06$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_hdfNoActiveClass_4" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn1_4" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn2_4" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn3_4" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn4_4" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn5_4" class="active">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn6_4" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_4_spn7_4" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_4" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl06$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_5" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl07$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1448'>Aberdeen Global - Asian Property Share (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl07$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_5" value="1448" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0396313180</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie - Tichomoří</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,79&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl07$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_hdfValue_5" value="RISC_PROF5" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl07$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_hdfActiveClass_5" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl07$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_hdfNoActiveClass_5" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn1_5" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn2_5" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn3_5" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn4_5" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn5_5" class="active">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn6_5" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_5_spn7_5" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_5" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl07$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_6" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl08$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1430'>Aberdeen Global - Brazil Equity (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl08$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_6" value="1430" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0743790957</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Latinská amerika</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,52&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl08$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_hdfValue_6" value="RISC_PROF7" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl08$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_hdfActiveClass_6" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl08$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_hdfNoActiveClass_6" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn1_6" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn2_6" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn3_6" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn4_6" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn5_6" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn6_6" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_6_spn7_6" class="active">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_6" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl08$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_7" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl09$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1457'>Aberdeen Global - Eastern European Equity</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl09$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_7" value="1457" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0505664713</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Východní evropa</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,24&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl09$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_hdfValue_7" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl09$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_hdfActiveClass_7" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl09$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_hdfNoActiveClass_7" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn1_7" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn2_7" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn3_7" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn4_7" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn5_7" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn6_7" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_7_spn7_7" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_7" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl09$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_8" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl10$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1106'>Aberdeen Global - Emerging Markets Bond (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl10$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_8" value="1106" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0376989207</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisy</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Globální rozvíjející se trhy</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,75&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl10$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_hdfValue_8" value="RISC_PROF4" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl10$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_hdfActiveClass_8" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl10$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_hdfNoActiveClass_8" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn1_8" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn2_8" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn3_8" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn4_8" class="active">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn5_8" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn6_8" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_8_spn7_8" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_8" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl10$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_9" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl11$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1105'>Aberdeen Global - Emerging Markets Bond (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl11$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_9" value="1105" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0132414144</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisy</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Globální rozvíjející se trhy</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,70&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl11$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_hdfValue_9" value="RISC_PROF4" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl11$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_hdfActiveClass_9" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl11$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_hdfNoActiveClass_9" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn1_9" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn2_9" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn3_9" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn4_9" class="active">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn5_9" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn6_9" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_9_spn7_9" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_9" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl11$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_10" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl12$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1461'>Aberdeen Global - Emerging Markets Corporate Bond</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl12$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_10" value="1461" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0566480116</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisy</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Globální rozvíjející se trhy</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,70&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl12$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_hdfValue_10" value="RISC_PROF4" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl12$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_hdfActiveClass_10" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl12$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_hdfNoActiveClass_10" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn1_10" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn2_10" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn3_10" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn4_10" class="active">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn5_10" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn6_10" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_10_spn7_10" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_10" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl12$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_11" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl13$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1459'>Aberdeen Global - Emerging Markets Infrastructure Equity (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl13$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_11" value="1459" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0523223328</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Globální rozvíjející se trhy</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,16&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl13$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_hdfValue_11" value="RISC_PROF5" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl13$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_hdfActiveClass_11" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl13$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_hdfNoActiveClass_11" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn1_11" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn2_11" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn3_11" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn4_11" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn5_11" class="active">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn6_11" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_11_spn7_11" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_11" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl13$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_12" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl14$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1460'>Aberdeen Global - Emerging Markets Infrastructure Equity (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl14$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_12" value="1460" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0523223757</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Globální rozvíjející se trhy</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,05&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl14$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_hdfValue_12" value="RISC_PROF5" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl14$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_hdfActiveClass_12" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl14$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_hdfNoActiveClass_12" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn1_12" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn2_12" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn3_12" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn4_12" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn5_12" class="active">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn6_12" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_12_spn7_12" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_12" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl14$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_13" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl15$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1450'>Aberdeen Global - Emerging Markets Local Currency Bond</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl15$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_13" value="1450" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0396317926</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisy</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Globální rozvíjející se trhy</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,76&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl15$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_hdfValue_13" value="RISC_PROF5" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl15$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_hdfActiveClass_13" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl15$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_hdfNoActiveClass_13" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn1_13" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn2_13" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn3_13" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn4_13" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn5_13" class="active">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn6_13" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_13_spn7_13" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_13" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl15$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_14" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl16$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1442'>Aberdeen Global - European Equity</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl16$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_14" value="1442" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0094541447</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Evropa</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,70&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl16$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_hdfValue_14" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl16$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_hdfActiveClass_14" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl16$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_hdfNoActiveClass_14" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn1_14" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn2_14" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn3_14" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn4_14" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn5_14" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn6_14" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_14_spn7_14" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_14" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl16$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_15" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl17$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1440'>Aberdeen Global - European Equity Dividend Fund (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl17$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_15" value="1440" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0505662188</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Evropa</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,84&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl17$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_hdfValue_15" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl17$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_hdfActiveClass_15" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl17$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_hdfNoActiveClass_15" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn1_15" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn2_15" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn3_15" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn4_15" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn5_15" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn6_15" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_15_spn7_15" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_15" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl17$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_16" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl18$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1454'>Aberdeen Global - European Equity Income (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl18$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_16" value="1454" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0505661966</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Evropa</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,72&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl18$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_hdfValue_16" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl18$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_hdfActiveClass_16" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl18$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_hdfNoActiveClass_16" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn1_16" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn2_16" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn3_16" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn4_16" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn5_16" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn6_16" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_16_spn7_16" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_16" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl18$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_17" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl19$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1447'>Aberdeen Global - Chinese Equity</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl19$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_17" value="1447" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0231483743</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Asie (bez Japonska)</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,98&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl19$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_hdfValue_17" value="RISC_PROF5" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl19$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_hdfActiveClass_17" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl19$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_hdfNoActiveClass_17" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn1_17" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn2_17" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn3_17" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn4_17" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn5_17" class="active">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn6_17" class="">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_17_spn7_17" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_17" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl19$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_18" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl20$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1452'>Aberdeen Global - Japanese Equity (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl20$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_18" value="1452" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0476876759</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Japonsko</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">1,71&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl20$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_hdfValue_18" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl20$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_hdfActiveClass_18" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl20$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_hdfNoActiveClass_18" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn1_18" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn2_18" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn3_18" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn4_18" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn5_18" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn6_18" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_18_spn7_18" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_18" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl20$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFunds_lnbStar_19" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl21$lnbStar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1470'>Aberdeen Global - Japanese Equity (JPY)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl21$hdfId" id="cphBody_usrFundList_grvFunds_hdfId_19" value="1470" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">ISIN</div><div class="table-value">LU0476876247</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Investiční společnost</div><div class="table-value">Aberdeen Global Services S.A.</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Třída aktiv</div><div class="table-value">Akcie</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">JPY</div>
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Regionální zaměření</div><div class="table-value">Japonsko</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">TER</div><div class="table-value">2,16&nbsp;%</div>
+                            </td><td class="risk hidden-cell">
+                                <div class="table-label">Rizikový faktor</div><div class="table-value"><input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl21$usrRiskFactorValuePresentation$hdfValue" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_hdfValue_19" value="RISC_PROF6" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl21$usrRiskFactorValuePresentation$hdfActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_hdfActiveClass_19" value="active" />
+<input type="hidden" name="ctl00$cphBody$usrFundList$grvFunds$ctl21$usrRiskFactorValuePresentation$hdfNoActiveClass" id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_hdfNoActiveClass_19" />
+<span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn1_19" class="">1</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn2_19" class="">2</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn3_19" class="">3</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn4_19" class="">4</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn5_19" class="">5</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn6_19" class="active">6</span><span id="cphBody_usrFundList_grvFunds_usrRiskFactorValuePresentation_19_spn7_19" class="">7</span></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFunds_lnbCompare_19" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFunds$ctl21$lnbCompare&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="paginator-net">
+			<td colspan="11"><table>
+				<tr>
+					<td><span>1</span></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFunds&#39;,&#39;Page$2&#39;)">2</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFunds&#39;,&#39;Page$3&#39;)">3</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFunds&#39;,&#39;Page$4&#39;)">4</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFunds&#39;,&#39;Page$5&#39;)">...</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFunds&#39;,&#39;Page$Last&#39;)">&gt;&gt;</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+</div>
+                <input type="submit" name="ctl00$cphBody$usrFundList$btnCompareMobile" value="Porovnat" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$btnCompareMobile&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphBody_usrFundList_btnCompareMobile" class="btn btn-white btn-compare btn-border-black hidden-md hidden-lg" />
+                <div id="cphBody_usrFundList_divTotalItems" class="total-items">
+                    Počet položek celkem: <span>828</span>
+                </div>
+                <div class="more-link-div download">
+                    <a id="cphBody_usrFundList_lbtExport" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$lbtExport&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Export do XLS</a>
+                </div>
+            </div>
+            <div class="tab-pane" id="2a">
+                <div class="sorting-combo hidden-md hidden-lg">
+                    <div class="form-item">
+                        <div class="select-wrapper">
+                            <select name="ctl00$cphBody$usrFundList$ddlSortBy2" id="cphBody_usrFundList_ddlSortBy2" class="form-control form-control-select">
+
+</select>
+                        </div>
+                    </div>
+                    <input type="submit" name="ctl00$cphBody$usrFundList$btnSort2" value="Řadit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$btnSort2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphBody_usrFundList_btnSort2" class="sorting-combo-btn" />
+                </div>
+                <div>
+	<table class="fund-table responsive-table" cellspacing="0" rules="all" border="1" id="cphBody_usrFundList_grvFundsEfficiency" style="border-collapse:collapse;">
+		<tr class="table-header">
+			<th scope="col">&nbsp;</th><th class="name" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByName" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByName&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Název</a></th><th scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByCurrencyCode" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByCurrencyCode&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Měna</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByPricePerPiece" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByPricePerPiece&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Cena za kus</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByPriceDate" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByPriceDate&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Datum platnosti ceny</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn1Month" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn1Month&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">1M&nbsp;(%)</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn3Months" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn3Months&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">3M&nbsp;(%)</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn6Month" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn6Month&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">6M&nbsp;(%)</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn1Year" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn1Year&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">1R&nbsp;(%)</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn3Years" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn3Years&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">3R&nbsp;(%)</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn5Years" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn5Years&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">5R&nbsp;(%)</a></th><th class="alignR" scope="col"><a id="cphBody_usrFundList_grvFundsEfficiency_lnbHeaderSortByEfficiencyIn10Years" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl01$lnbHeaderSortByEfficiencyIn10Years&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">10R&nbsp;(%)</a></th><th class="hidden-md hidden-lg" scope="col">&nbsp;</th><th scope="col">&nbsp;</th>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_0" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl02$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1462'>Aberdeen Global - Asia Pacific Equity (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl02$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_0" value="1462" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">10,1833</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">4,38&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">6,93&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">17,51&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">22,32&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;2,30&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_0" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl02$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_1" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl03$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1441'>Aberdeen Global - Asia Pacific Equity (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl03$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_1" value="1441" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">75,0109</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">4,57&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">7,43&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">18,74&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">24,73&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">0,51&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_1" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl03$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_2" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl04$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1465'>Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl04$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_2" value="1465" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">9,3244</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">0,52&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">1,54&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">2,42&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">0,31&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;7,16&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_2" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl04$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_3" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl05$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1444'>Aberdeen Global - Asian Local Currency Short Duration Bond (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl05$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_3" value="1444" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">6,6145</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">0,69&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,01&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">3,45&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">2,14&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;4,07&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_3" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl05$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_4" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl06$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1451'>Aberdeen Global - Asian Property Share (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl06$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_4" value="1451" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">8,4616</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">2,00&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">6,02&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">13,54&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">11,94&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;6,11&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_4" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl06$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_5" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl07$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1448'>Aberdeen Global - Asian Property Share (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl07$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_5" value="1448" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">18,7368</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">2,13&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">6,47&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">14,70&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">14,19&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;3,14&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_5" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl07$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_6" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl08$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1430'>Aberdeen Global - Brazil Equity (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl08$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_6" value="1430" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">6,0117</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">18.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">-&nbsp;7,33&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">-&nbsp;7,83&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">12,29&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">28,30&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;21,41&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_6" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl08$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_7" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl09$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1457'>Aberdeen Global - Eastern European Equity</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl09$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_7" value="1457" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">102,4670</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">-&nbsp;0,45&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">-&nbsp;1,96&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">8,24&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">18,37&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">12,94&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_7" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl09$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_8" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl10$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1106'>Aberdeen Global - Emerging Markets Bond (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl10$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_8" value="1106" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">140,0772</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">-&nbsp;0,11&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,38&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">6,99&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">8,84&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">6,89&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value">20,04&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_8" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl10$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_9" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl11$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1105'>Aberdeen Global - Emerging Markets Bond (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl11$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_9" value="1105" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">43,9583</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">0,06&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,84&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">7,94&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">10,74&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">9,86&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value">24,39&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_9" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl11$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_10" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl12$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1461'>Aberdeen Global - Emerging Markets Corporate Bond</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl12$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_10" value="1461" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">13,4975</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">0,70&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,27&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">6,28&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">9,91&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">13,53&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_10" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl12$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_11" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl13$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1459'>Aberdeen Global - Emerging Markets Infrastructure Equity (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl13$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_11" value="1459" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">7,8495</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">18.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">-&nbsp;0,91&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">4,24&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">13,19&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">17,42&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;10,28&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_11" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl13$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_12" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl14$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1460'>Aberdeen Global - Emerging Markets Infrastructure Equity (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl14$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_12" value="1460" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">8,1840</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">18.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">-&nbsp;0,70&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">4,75&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">14,31&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">19,76&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;8,04&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_12" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl14$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_13" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl15$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1450'>Aberdeen Global - Emerging Markets Local Currency Bond</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl15$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_13" value="1450" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">9,3632</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">-&nbsp;0,65&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,85&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">9,64&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">9,00&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">-&nbsp;14,62&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_13" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl15$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_14" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl16$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1442'>Aberdeen Global - European Equity</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl16$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_14" value="1442" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">50,9200</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">3,26&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">7,37&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">16,39&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">17,86&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">12,09&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_14" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl16$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_15" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl17$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1440'>Aberdeen Global - European Equity Dividend Fund (USD)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl17$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_15" value="1440" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">211,0995</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">2,49&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">6,53&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">14,95&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">16,59&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">8,88&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_15" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl17$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_16" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl18$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1454'>Aberdeen Global - European Equity Income (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl18$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_16" value="1454" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">210,9606</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">2,33&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">6,13&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">14,19&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">15,14&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">8,99&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_16" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl18$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_17" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl19$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1447'>Aberdeen Global - Chinese Equity</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl19$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_17" value="1447" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">USD</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">25,3143</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">3,26&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">7,45&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">14,10&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">24,51&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">6,06&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-up"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_17" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl19$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_18" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl20$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1452'>Aberdeen Global - Japanese Equity (EUR)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl20$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_18" value="1452" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">EUR</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">12,7878</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">4,50&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,54&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">8,33&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">10,78&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">37,92&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_18" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl20$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="fund">
+			<td class="star">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbStar2_19" class="star-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl21$lnbStar2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td><td class="name">
+                                <span class="mobile-toggle"></span><a href='http://www3.conseq.cz/FundDetail.aspx?Id=1470'>Aberdeen Global - Japanese Equity (JPY)</a><input type="hidden" name="ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl21$hdfId" id="cphBody_usrFundList_grvFundsEfficiency_hdfId_19" value="1470" />
+                            </td><td class="hidden-cell">
+                                <div class="table-label">Měna</div><div class="table-value">JPY</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Cena za kus</div><div class="table-value">26&nbsp;745,2291</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">Datum platnosti ceny</div><div class="table-value">19.5.2017</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1M&nbsp;(%)</div><div class="table-value">4,56&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3M&nbsp;(%)</div><div class="table-value">2,62&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">6M&nbsp;(%)</div><div class="table-value">8,46&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">1R&nbsp;(%)</div><div class="table-value">11,59&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">3R&nbsp;(%)</div><div class="table-value">39,71&nbsp;%</div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">5R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="hidden-cell alignR">
+                                <div class="table-label">10R&nbsp;(%)</div><div class="table-value"></div>
+                            </td><td class="indicator hidden-md hidden-lg">
+                                <span class="arrow arrow-down"></span>
+                            </td><td class="compare">
+                                <a id="cphBody_usrFundList_grvFundsEfficiency_lnbCompare2_19" class="input-checkbox" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$grvFundsEfficiency$ctl21$lnbCompare2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                            </td>
+		</tr><tr class="paginator-net">
+			<td colspan="14"><table>
+				<tr>
+					<td><span>1</span></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFundsEfficiency&#39;,&#39;Page$2&#39;)">2</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFundsEfficiency&#39;,&#39;Page$3&#39;)">3</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFundsEfficiency&#39;,&#39;Page$4&#39;)">4</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFundsEfficiency&#39;,&#39;Page$5&#39;)">...</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphBody$usrFundList$grvFundsEfficiency&#39;,&#39;Page$Last&#39;)">&gt;&gt;</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+</div>
+                <input type="submit" name="ctl00$cphBody$usrFundList$btnCompareMobile2" value="Porovnat" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$btnCompareMobile2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cphBody_usrFundList_btnCompareMobile2" class="btn btn-white btn-compare btn-border-black hidden-md hidden-lg" />
+                <div id="cphBody_usrFundList_divTotalItems2" class="total-items">
+                    Počet položek celkem: <span>828</span>
+                </div>
+                <div class="more-link-div download">
+                    <a id="cphBody_usrFundList_lbtExport2" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cphBody$usrFundList$lbtExport2&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Export do XLS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var tab = document.getElementById('cphBody_usrFundList_hdfTabs').value;
+        $('#myTab a[href="' + tab + '"]').tab('show');
+    });
+</script>
+
+        </div>
+
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>

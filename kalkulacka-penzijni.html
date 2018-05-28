@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">                      
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq Penzijní kalkulačka</title>
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="slideshow">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="fill" style="background-image:url('./images/banner-2.jpg');">
+              <div class="carousel-caption container">
+                <h3>CLASS APTENT TACITI</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Phasellus rhoncus. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</h4>
+                <ul>
+                  <li>Duis sapien nunc, commodo et, interdum</li>
+                  <li>Mauris tincidunt sem sed arcu</li>
+                  <li>Fusce consectetuer risus a nunc</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+        
+            <div class="item">
+              <div class="fill" style="background-image:url('./images/banner-2.jpg');">
+              <div class="carousel-caption container">
+                <h3>CLASS APTENT TACITI</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Phasellus rhoncus. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</h4>
+                <ul>
+                  <li>Duis sapien nunc, commodo et, interdum</li>
+                  <li>Mauris tincidunt sem sed arcu</li>
+                  <li>Fusce consectetuer risus a nunc</li>
+                </ul>  
+              </div>
+              </div>
+            </div>
+        
+            <div class="item">
+              <div class="fill" style="background-image:url('./images/banner-2.jpg');">
+              <div class="carousel-caption container">
+                <h3>CLASS APTENT TACITI</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Phasellus rhoncus. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</h4>
+                <ul>
+                  <li>Duis sapien nunc, commodo et, interdum</li>
+                  <li>Mauris tincidunt sem sed arcu</li>
+                  <li>Fusce consectetuer risus a nunc</li>
+                </ul>  
+              </div>
+              </div>
+            </div>
+
+            </div>
+            
+            <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
+          </div>
+      </div>   <!-- /.slideshow -->
+     
+     
+      <div class="container"> 
+          
+        <div class="row subMenu letters">
+          <div class="col-md-3 col-sm-6">
+            <div class="subMenu-tile letters"> 
+              <a href=""><span class="letter">H</span>Horizont Invest</a>
+            </div>
+          <div class="letters-text"><p>Investiční program Horizont Invest patří do kategorie produktů "životního cyklu", které jsou ve světě velmi oblíbené zejména pro dlouhodobé programy pravidelného investování, typicky pro penzijní plány. Jedná se o službu...</p></div>
+            </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="subMenu-tile letters">
+              <a href=""><span class="letter">Z<sup>+</sup></span>Strategie spoření Zenit s garancí</a>
+          </div>
+          <div class="letters-text"><p>Investiční program Horizont Invest patří do kategorie produktů "životního cyklu", které jsou ve světě velmi oblíbené zejména pro dlouhodobé programy pravidelného investování, typicky pro penzijní plány. Jedná se o službu...</p></div>
+            </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="subMenu-tile letters">
+              <a href=""><span class="letter">C</span>Classic Invest</a>
+            </div>
+            <div class="letters-text"><p>Investiční program Horizont Invest patří do kategorie produktů "životního cyklu", které jsou ve světě velmi oblíbené zejména pro dlouhodobé programy pravidelného investování, typicky pro penzijní plány. Jedná se o službu...</p></div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="subMenu-list">
+              <ul>
+                <li><a href=""><i class="icon icon-lupa-widget"></i>Lorem Ipsum</a></li>
+                <li><a href=""><i class="icon icon-stisk-rukou"></i>Dolor sit amet</a></li>
+                <li><a href=""><i class="icon icon-faq"></i>Lorem ipsum dolor</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>  <!-- /.subMenu --> 
+        
+       </div>  <!-- /.container -->  
+     
+       
+       <div class="container"> 
+        <ul class="row tabs-1 nav nav-pills">    
+          <li class="col-xs-3 active">
+            <div class="tabs-1-tab"> 
+              <a data-toggle="tab" href="#1a"><span class="tab-icon img-ruka-mince"></span>Státní příspěvky<span class="tabs-arrow"></span></a>
+            </div>  
+          </li>
+          <li class="col-xs-3">
+            <div class="tabs-1-tab">
+              <a data-toggle="tab" href="#2a"><span class="tab-icon img-muz-dolar"></span>Příspěvky zaměstnavatele<span class="tabs-arrow"></span></a>
+            </div>
+          </li>
+          <li class="col-xs-3">
+            <div class="tabs-1-tab">
+              <a data-toggle="tab" href="#3a"><span class="tab-icon img-garance"></span>Garance vkladu<span class="tabs-arrow"></span></a>
+            </div>
+          </li>
+          <li class="col-xs-3">
+            <div class="tabs-1-tab">
+              <a data-toggle="tab" href="#4a"><span class="tab-icon img-sachy"></span>Strategie životního cyklu<span class="tabs-arrow"></span></a>
+            </div>
+          </li>
+        </ul>  <!-- /.tabs-1 -->  
+        <div class="tabs-1-title visible-sm-block visible-xs-block hidden"></div>
+     
+      <div class="tab-content clearfix">
+      
+			  <div class="tab-pane active" id="1a">
+          <h2>Jak získat od státu až 4 260 Kč ročně?</h2>
+          <div class="row calculator-row">
+            <div class="col-sm-7 col-md-8 col-lg-9">
+              
+              <div class="calculator">
+                <div class="calculator-item orange with-description">  <!-- pokud bude popisek k tickům (maximální příspěvek apod.) jako v tomto případě, tak přidat classu "with-description" ) PLUS .orange pro oranžovou variatu. Modrá je default - bez classy. --> 
+                <div class="calculator-item-label">Vlastní příspěvek měsíčně</div>
+                  <input id="exampleSliderVal" class="current-label form-control" value="1000 Kč" data-suffix=" Kč" type="text">  
+                  <!-- <span class="current-label" id="exampleCurrentSliderValLabel"><span id="exampleSliderVal">1000</span> Kč</span>  -->
+                  <input id="example" type="text" data-slider-ticks="[0, 1000, 2000, 3000]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["0 Kč", "1 000 Kč<span>Maximální státní příspěvek</span>", "3 000 Kč<span>Maximální daňový odečet</span>"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="50" />
+                                    
+                  <script type="text/javascript">
+                         $("#example").slider({value: 1000});
+                         $("#example").change(function(slideEvt) {
+                      	   var value = $(this).val();
+                           $("#exampleSliderVal").val(value + ' Kč');
+                         });
+                    </script>  
+                  
+                </div>
+                
+              </div>
+              <p>K vašemu vlastnímu měsíčnímu příspěvku můžete získat navíc i státní příspěvek až do <strong>230 Kč (2 760 Kč ročně). Maximální státní příspěvek získáte při vlastním příspěvku 1 000 Kč měsíčně.</strong></p>
+              <p>Uspořit ve III. pilíři můžete, i pokud budete spořit více jak 1 000 Kč měsíčně. O vaše příspěvky "navíc" si můžete snížit daňový základ pro výpočet daně z příjmu fyzických osob. <strong>Maximálně lze za rok 2015 odečíst částku 12 000 Kč, čímž na dani uspoříte až 1 800 Kč. Maximální státní příspěvek a daňová úleva je tak dosažena při měsíční úložce 2 000 Kč.</strong></p>
+              
+              <br>
+              <h3>Varianty spoření</h3>
+              
+              <SCRIPT type="text/javascript">
+		    $(function () {
+		        Highcharts.chart('cphBody_usrGraphPensionStrategy_graphContainer', {
+		            data: {
+		                table: 'datatable'
+		            },
+		            chart: {
+		                type: 'column'
+		            },
+		            title: {
+		                text: ''
+		            },
+                xAxis: {
+                    labels: {
+                      style: {
+                          fontSize: '14px',
+                          fontWeight: 'normal',
+                          fontFamily: 'Tahoma',
+                          color: '#000000'
+                      }
+                    }
+                },
+		            yAxis: {
+		                allowDecimals: false,
+		                title: {
+		                    text: ''
+		                }
+                        , labels: { enabled: false }
+		            },
+		            tooltip: {
+		                formatter: function () {
+		                    return this.series.name + ' ' +
+                                '<b>' + this.point.y.toLocaleString() + ' Kč </b>' //+ ' ' + this.point.name.toLowerCase()
+                                ;
+		                }
+		            }
+                    , colors: ['#f89728', '#00395a', '#226b8c', '#939598']
+                    ,credits: {  enabled: false   } 
+                    ,navigation: { buttonOptions: {  enabled: false      }    }  
+                    ,legend: { 
+                        enabled: true,
+                        symbolHeight: 12,
+                        symbolWidth: 12,
+                        symbolRadius: 0,
+                        align: 'left',
+                        itemStyle: {
+                          lineHeight: '14px',
+                          fontSize: '14px',
+                          fontWeight: 'normal',
+                          fontFamily: 'Tahoma',
+                          }
+                 },
+		        });
+		    });
+		</SCRIPT>
+              
+              
+              <DIV class="graphs-graph" id="cphBody_usrGraphPensionStrategy_graphContainer" style="height: 350px;"></DIV>
+              
+               <TABLE id="datatable" style="display: none;">
+                <THEAD>
+                  <TR>
+                    <TH></TH>
+                    <TH>Celková částka</TH>
+                    <TH>Vklad</TH>
+                    <TH>Výnos</TH>
+                    <TH>Státní příspevěk</TH></TR></THEAD>
+                  <TBODY>
+                  <TR>
+                    <TH>Pesimistická</TH>
+                    <TD>30 000</TD>
+                    <TD>40 000</TD>
+                    <TD>70 000</TD>
+                    <TD>20 000</TD></TR>
+               <!--   <TR>
+                    <TH>Neutrální</TH>
+                    <TD>2</TD>
+                    <TD>10</TD>
+                    <TD>3</TD>
+                    <TD>4</TD></TR>
+                  <TR>
+                    <TH>Optimistická</TH>
+                    <TD>5</TD>
+                    <TD>11</TD>
+                    <TD>3</TD>
+                    <TD>4</TD>
+                  </TR>        -->
+                </TBODY>
+              </TABLE>
+              
+              
+              
+				    </div>
+            
+            <div class="col-sm-5 col-md-4 col-lg-3">   
+                <div class="calculator-results">
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Statní příspěvek měsíčně</div>
+                    <div class="calculator-results-value">230 Kč</div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Statní příspěvek za rok</div>
+                    <div class="calculator-results-value bold">2 760 Kč <span class="smaller-text">(12 x 230 Kč)</span></div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Roční daňová úspora</div>
+                    <div class="calculator-results-value">0 Kč</div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Maximální roční daňová úspora</div>
+                    <div class="calculator-results-value">1 500 Kč</div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Ročně od státu získáte až</div>
+                    <div class="calculator-results-value orange-text bold">4 260 Kč</div>
+                  </div>
+                </div>
+                <div class="calculator-actions"> 
+                  <a class="btn btn-white full-width" href="">Chci vědět víc &rsaquo;</a>
+                  <a class="btn btn-orange full-width" href="">Sjednat smlouvu online &rsaquo;</a>
+                  <div class="more-link-div download">
+                    <a href="">Stáhnout výsledek kalkulačky v PDF</a>
+                  </div>
+                  <div class="more-link-div mar-top-20">
+                    <a href="">Další podrobnosti &rsaquo;</a>
+                  </div>
+                </div>  
+				    </div>
+          </div>
+        </div>
+        
+				<div class="tab-pane" id="2a">
+          <h2>Příspěvky zaměstnavatele</h2>
+          <p>Sed feugiat sapien pharetra venenatis cursus. Pellentesque maximus justo non tincidunt posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus mollis nibh, non ornare purus condimentum non. Etiam fermentum posuere enim dictum molestie. Aliquam erat volutpat.</p>
+				</div>
+        <div class="tab-pane" id="3a">
+          <h2>Garance vkladu</h2>
+          <p>Proin faucibus mollis nibh, non ornare purus condimentum non. Sed feugiat sapien pharetra venenatis cursus. Pellentesque maximus justo non tincidunt posuere. Etiam fermentum posuere enim dictum molestie. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+          <div class="tab-pane" id="4a">
+          <h2>Strategie životního cyklu</h2>
+          <p>Sadipiscing elit. Proin faucibus mollis nibh, non ornare purus condimentum non. Sed feugiat sapien pharetra venenatis cursus. Pellentesque maximus justo non tincidunt posuere. Etiam fermentum posuere enim dictum molestie. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur.</p>
+				</div>
+			</div>  <!-- /.tab-content -->     
+     
+     
+       </div>  <!-- /.container -->
+        
+
+       <div class="separator"></div>
+       
+       <div class="container">
+         <h2>Kolik si chcete naspořit na důchod?</h2>
+         <div class="row calculator-row">
+            <div class="col-sm-7 col-md-8 col-lg-9">
+              
+              <div class="calculator">
+                <div class="calculator-item orange">
+                  <div class="calculator-item-label">Délka spoření</div>
+                  <input id="exampleSliderVal2" class="current-label form-control" value="30 let" data-suffix=" let" type="text">
+                  <!-- <span class="current-label" id="exampleCurrentSliderValLabel2"><span id="exampleSliderVal2">30</span> let</span> -->
+                  <input id="example2" type="text" data-slider-ticks="[0, 50]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["1 rok", "50 let"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="1" />
+                                      
+                  <script type="text/javascript">
+                       $("#example2").slider({value: 30});
+                       $("#example2").change(function(slideEvt) {
+                       var value = $(this).val();
+                        $("#exampleSliderVal2").val(value + ' let')
+                       });
+                  </script>  
+                  
+                </div>
+                
+                <div class="calculator-item">  <!-- modrý posuvník -->
+                  <div class="calculator-item-label">Měsíční příspěvek účastníka</div>
+                  <input id="exampleSliderVal3" class="current-label form-control" value="2000 Kč" data-suffix=" Kč" type="text">
+                  <!-- <span class="current-label" id="exampleCurrentSliderValLabel3"><span id="exampleSliderVal3">2000</span> Kč</span> --> 
+                  <input id="example3" type="text" data-slider-ticks="[500, 5000]" data-slider-ticks-snap-bounds="100" data-slider-ticks-labels='["500 Kč", "5 000 Kč"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="100" />
+                                   
+                  <script type="text/javascript">
+                      $("#example3").slider({value: 2000});
+                      $("#example3").change(function(slideEvt) {
+                      	var value = $(this).val();
+                        $("#exampleSliderVal3").val(value + ' Kč')
+                      });
+                  </script>  
+                  
+                </div>
+              </div>
+				    </div>
+            
+            <div class="col-sm-5 col-md-4 col-lg-3">   
+                <div class="calculator-results">
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Celkový příspěvek účastníka</div>
+                    <div class="calculator-results-value bold">720 000 Kč</div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Vlastní zhodnocení</div>
+                    <div class="calculator-results-value bold">465 647 Kč <span class="smaller-text"> / 29%</span></div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Průměrný očekávaný roční výnos</div>
+                    <div class="calculator-results-value">3,72%</div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Celkové státní příspěvky</div>
+                    <div class="calculator-results-value">70 840 Kč</div>
+                  </div>
+                  <div class="calculator-results-item">
+                    <div class="calculator-results-label">Cílová částka</div>
+                    <div class="calculator-results-value orange-text bold">1 256 487 Kč</div>
+                  </div>
+                </div>
+                <div class="calculator-actions"> 
+                  <a class="btn btn-white full-width" href="">Chci vědět víc &rsaquo;</a>
+                  <a class="btn btn-orange full-width" href="">Sjednat smlouvu online &rsaquo;</a>
+                  <div class="more-link-div download">
+                    <a href="">Stáhnout výsledek kalkulačky v PDF</a>
+                  </div>
+                  <div class="more-link-div mar-top-20">
+                    <a href="">Podrobná kalkulačka &rsaquo;</a>
+                  </div>
+                </div>  
+				    </div>
+          </div> 
+      
+       </div>
+
+      
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+    
+  </body>                             
+</html>

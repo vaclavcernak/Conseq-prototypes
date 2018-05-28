@@ -1,0 +1,726 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">                      
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq Podrobná kalkulačka</title>
+    
+    
+    <SCRIPT type="" javascript''="" text="">   
+      $(function () {       
+      Highcharts.chart('cphBody_usrModellingPortfolioFunds_usrGraphDonutPortfolio_graphContainer', 
+      {  chart: {  
+            plotBackgroundColor: null,
+            plotShadow: false,
+            plotBorderWidth: null,
+            marginBottom: 0,
+            type: 'pie'},
+         title: {text: '',
+              x: -20},
+         subtitle: {text: '',
+              x: -20},      
+         plotOptions: {
+                pie: {
+                  allowPointSelect: true,
+                  cursor: 'pointer', 
+                  
+                  innerSize: '50%',
+                  dataLabels: {
+                      enabled: false,
+                      },
+                      showInLegend: true
+                      }
+                      },  
+            tooltip: {enabled : true,
+              pointFormat: '<b>{point.y} Kč</b>'},
+            legend: {enabled: false,
+                   /*  itemMarginBottom: 10,
+                     layout: 'vertical',
+                     floating: true,
+                     padding: 0,
+                     symbolHeight: 12,
+                     symbolWidth: 12,
+                     symbolRadius: 0,
+                     align: 'left',
+                     y: 0,     
+                     labelFormatter: function() {
+              					return '<div><span>' + this.name + '</span><br/> <span style="font-size: 22px;">' + this.y.toLocaleString() + ' Kč</span></div>';
+              				},
+                     itemStyle: {
+                          fontSize: '14px',
+                          fontWeight: 'normal',
+                          fontFamily: 'Tahoma',
+                          },  */
+                  },
+            credits: { enabled: false},
+            navigation: { buttonOptions: {enabled: false},},
+            series: [{ colorByPoint: true,
+              data: [['Jednorázový počáteční vklad',350000],['Výnos',60000],['Roční příspěvek od státu',81250],['Roční příspěvek od zaměstnavatele',5680] ]}],
+              navigator: {enabled:false},
+              colors: ['#f89728', '#fdc88e', '#00395a','#9cbacf']
+              });   
+          });  
+    </SCRIPT>
+    
+    <SCRIPT type="" javascript''="" text="">   
+      $(function () {       
+      
+      Highcharts.chart('cphBody_usrModellingPortfolioFunds_usrGraphDonutPortfolio_graphContainer2', 
+      {  chart: {  
+            plotBackgroundColor: null,
+            plotShadow: false,
+            plotBorderWidth: null,
+            marginBottom: 0,
+            type: 'pie'},
+         title: {text: '',
+              x: -20},
+         subtitle: {text: '',
+              x: -20},      
+         plotOptions: {
+                pie: {
+                  allowPointSelect: true,
+                  cursor: 'pointer', 
+                  
+                  innerSize: '50%',
+                  dataLabels: {
+                      enabled: false,
+                      },
+                      showInLegend: true
+                      }
+                      },  
+            tooltip: {enabled : true,
+              pointFormat: '<b>{point.y} Kč</b>'},
+            legend: {enabled: false,/*
+                     itemMarginBottom: 10,
+                     layout: 'vertical',
+                     floating: true,
+                     align: 'center',
+                     padding: 0,
+                     symbolHeight: 12,
+                     symbolWidth: 12,
+                     symbolRadius: 0,
+                     //labelFormat: '{name} ({percentage:.1f}%)',
+                     labelFormatter: function() {
+              					return '<div><span>' + this.name + '</span><br/> <span style="font-size: 22px;">' + this.y.toLocaleString() + ' Kč</span></div>';
+              				},
+                     itemStyle: {
+                          fontSize: '14px',
+                          fontWeight: 'normal',
+                          fontFamily: 'Tahoma',
+                          },
+                          align: 'left',
+                          y: 0  */
+                  },
+            credits: { enabled: false},
+            navigation: { buttonOptions: {enabled: false},},
+            series: [{ colorByPoint: true,
+              data: [['Jednorázový počáteční vklad',230000],['Výnos',85000],['Roční příspěvek od státu',105050],['Roční příspěvek od zaměstnavatele',30880] ]}],
+              navigator: {enabled:false},
+              colors: ['#f89728', '#fdc88e', '#00395a','#9cbacf']
+              });   
+          });  
+    </SCRIPT>
+    
+    
+    
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li><a href="">CONSEQ</a><span class="divider">/</span></li>
+              <li><a href="">Penze</a><span class="divider">/</span></li>
+              <li>Finanční kalkulačka</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+     
+      <div class="container">
+      
+      <h1>KOMPLEXNÍ FINANČNÍ KALKULAČKA</h1>
+        
+       <div class="row calculator-row calculator-complex">  <!-- komplexní kalkulačka musí mít classu "calculator-complex" pro odlišné chování než ostatní kalkulačky-->
+            <div class="col-md-6">
+              <h2 class="calculator-complex-title">Pravidelné investice do podílových fondů</h2>
+              <div class="calculator-complex-content">  <!-- content pro sbalení v mobilním zobrazení -->
+                <div class="calculator-radios">
+                  <div class="calculator-radios-label">Strategie</div>
+                  <div class="calculator-radios-list">
+                    <ul class="radios">
+                      <li>
+                        <input type="radio" id="konzervativni" name="strategy" value="konzervativni" checked>
+                        <label for="konzervativni"><span></span>Konzervativní</label>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae rhoncus erat, non fringilla ligula. Nunc a ante ultrices, viverra dolor eget, viverra ligula. Nulla dignissim ex ac massa efficitur, sit amet feugiat velit pellentesque. Quisque pharetra congue mauris, in interdum elit ultrices eu. In eu purus eu felis consequat gravida."></a>
+                      </li>
+                      <li>
+                        <input type="radio" id="vyvazena" name="strategy" value="vyvazena">
+                        <label for="vyvazena"><span></span>Vyvážená</label>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae rhoncus erat, non fringilla ligula. Nunc a ante ultrices, viverra dolor eget, viverra ligula. Nulla dignissim ex ac massa efficitur, sit amet feugiat velit pellentesque. Quisque pharetra congue mauris, in interdum elit ultrices eu. In eu purus eu felis consequat gravida. Nulla scelerisque faucibus est, sit amet porttitor ante porta vel."></a>
+                      </li>
+                      <li>
+                        <input type="radio" id="dynamicka" name="strategy" value="dynamicka">
+                        <label for="dynamicka"><span></span>Dynamická</label>
+                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae rhoncus erat, non fringilla ligula. Nunc a ante ultrices, viverra dolor eget, viverra ligula. Nulla dignissim ex ac massa efficitur, sit amet feugiat velit pellentesque. Quisque pharetra congue mauris, in interdum elit ultrices eu."></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="calculator">
+                  <div class="calculator-item">
+                    <div class="calculator-item-label">Jednorázový počáteční vklad</div>
+                    <input id="exampleSliderVal" class="current-label form-control" value="800 Kč" data-suffix=" Kč" type="text">
+                    <input id="example" type="text" data-slider-ticks="[0, 5000]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["0 Kč", "5000 Kč"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="1" />
+                                        
+                    <script type="text/javascript">
+                         $("#example").slider({value: 800});
+                         $("#example").change(function(slideEvt) {
+                      	   var value = $(this).val();
+                           $("#exampleSliderVal").val(value + ' Kč');
+                         });
+                    </script>  
+                    
+                  </div>
+                  
+                  <div class="calculator-item">
+                    <div class="calculator-item-label">Měsíční příspěvek účastníka</div>
+                    <input id="exampleSliderVal2" class="current-label form-control" value="4700 Kč" data-suffix=" Kč" type="text">
+                    <input id="example2" type="text" data-slider-ticks="[0, 5000]" data-slider-ticks-snap-bounds="100" data-slider-ticks-labels='["0 Kč", "5 000 Kč"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="100" />
+                                     
+                    <script type="text/javascript">
+                        $("#example2").slider({value: 4700});
+                        $("#example2").change(function(slideEvt) {
+                      	  var value = $(this).val();
+                          $("#exampleSliderVal2").val(value + ' Kč');
+                        });
+                    </script>  
+                    
+                  </div>
+                  
+                  <div class="calculator-item">
+                    <div class="calculator-item-label">Délka investice</div>
+                    <input id="exampleSliderVal3" class="current-label form-control" value="30 let" data-suffix=" let" type="text"> 
+                    <input id="example3" type="text" data-slider-ticks="[5, 100]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["5 let", "100 let"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="1" />
+                                     
+                    <script type="text/javascript">
+                        $("#example3").slider({value: 30});
+                        $("#example3").change(function(slideEvt) {
+                        	var value = $(this).val();
+                          $("#exampleSliderVal3").val(value + ' let')
+                        });
+                    </script>  
+                    
+                  </div>
+                  
+                </div>
+              </div>  <!-- /.calculator-complex-content -->
+              
+              
+              
+              <h2 class="calculator-complex-title with-label zenit">Doplňkové penzijní spoření (nový pilíř)<span>ZENIT</span></h2> <!-- ".with-label" = nadpis má vpravo label (např. ZENIT) s oranžovým pozadím)  -->
+              <div class="calculator-complex-content">  <!-- content pro sbalení v mobilním zobrazení -->
+                <div class="calculator-radios">
+                  <div class="calculator-radios-label">Strategie</div>
+                  
+                 
+                 <div class="row">   <!-- buď checkbox -->
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-item">
+                      <div class="checkbox-radio checkbox-radio-big">
+                        <input id="garance" class="form-control form-control-checkbox" name="garance" type="checkbox">
+                        <label class="form-label" for="garance"><span></span>S garancí</label>
+                      </div>
+                    </div>  
+                  </div>
+                 </div> 
+                  
+                <div class="row">   <!-- a nebo tab -->
+                    <div class="col-sm-12"> <!-- taby - prázdné,  nikam nevedou ( = chybí content), jenom pro představu -->
+                      <a href="#" class="nav-tabs-dropdown xxs"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->                      
+                      <ul class="tabs-3 nav nav-pills tabs-small-text nav-tabs-wrapper xxs"> <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->     
+                        <li class="active">
+                          <div class="tabs-3-tab"> 
+                            <a data-toggle="tab" href="#">Strategie spoření ZENIT s garancí<span class="tabs-3-arrow"></span></a>
+                          </div>  
+                        </li>
+                        <li>
+                          <div class="tabs-3-tab">
+                            <a data-toggle="tab" href="#">Strategie spoření ZENIT<span class="tabs-3-arrow"></span></a>
+                          </div>
+                        </li>
+                      </ul>  <!-- /.tabs-3 -->  
+                    </div>
+                  </div>  
+                  
+                  <div class="calculator-radios-list">
+                    <ul class="radios">
+                      <li>
+                        <input type="radio" id="konzervativni2" name="strategy2" value="konzervativni2" checked>
+                        <label for="konzervativni2"><span></span>Konzervativní</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="vyvazena2" name="strategy2" value="vyvazena2">
+                        <label for="vyvazena2"><span></span>Vyvážená</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="dynamicka2" name="strategy2" value="dynamicka2">
+                        <label for="dynamicka2"><span></span>Dynamická</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="calculator">
+                  <div class="calculator-item">
+                    <div class="calculator-item-label">Jednorázový počáteční vklad</div>
+                    <input id="exampleSliderVal4" class="current-label form-control" value="800 Kč" data-suffix=" Kč" type="text">
+                    <input id="example4" type="text" data-slider-ticks="[0, 5000]" data-slider-ticks-snap-bounds="0" data-slider-ticks-labels='["0 Kč", "5000 Kč"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="1" />
+                                        
+                    <script type="text/javascript">
+                         $("#example4").slider({value: 800});
+                         $("#example4").change(function(slideEvt) {
+                          	var value = $(this).val();
+                           $("#exampleSliderVal4").val(value + ' Kč')
+                         });
+
+                    </script>  
+                    
+                  </div>
+                  
+                  <div class="calculator-item">
+                    <div class="calculator-item-label">Měsíční příspěvek účastníka</div>
+                    <input id="exampleSliderVal5" class="current-label form-control" value="2000 Kč" data-suffix=" Kč" type="text"> 
+                    <input id="example5" type="text" data-slider-ticks="[0, 5000]" data-slider-ticks-snap-bounds="100" data-slider-ticks-labels='["0 Kč", "5 000 Kč"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="100" />
+                                     
+                    <script type="text/javascript">
+                        $("#example5").slider({value: 2000});
+                        $("#example5").change(function(slideEvt) {
+                      	 var value = $(this).val();
+                          $("#exampleSliderVal5").val(value + ' Kč')
+                       });
+                    </script>  
+                    
+                  </div>
+                  
+                  <div class="calculator-item blue">
+                    <div class="calculator-item-label">Délka investice</div>
+                    <input id="exampleSliderVal6" class="current-label form-control" value="30 let" data-suffix=" let" type="text"> 
+                    <input id="example6" type="text" data-slider-ticks="[5, 100]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["5 let", "100 let"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="1" />
+                                     
+                    <script type="text/javascript">
+                        $("#example6").slider({value: 30});
+                        $("#example6").change(function(slideEvt) {
+                        	var value = $(this).val();
+                          $("#exampleSliderVal6").val(value + ' let')
+                        });
+                    </script>  
+                    
+                  </div>
+                  
+                  <div class="calculator-item blue">
+                    <div class="calculator-item-label">Roční příspěvek zaměstnavatele</div>
+                    <input id="exampleSliderVal7" class="current-label form-control" value="4000 Kč" data-suffix=" Kč" type="text"> 
+                    <input id="example7" type="text" data-slider-ticks="[0, 7000]" data-slider-ticks-snap-bounds="100" data-slider-ticks-labels='["0 Kč", "7 000 Kč"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="100" />
+                                     
+                    <script type="text/javascript">
+                        $("#example7").slider({value: 4000});
+                        $("#example7").change(function(slideEvt) {
+                        	var value = $(this).val();
+                          $("#exampleSliderVal7").val(value + ' Kč')
+                        });
+                    </script>  
+                    
+                  </div>
+                  
+                  <div class="calculator-item-float-wrapper">
+                    <div class="calculator-item-float">
+                      <div class="calculator-item-label">Roční příspěvek od státu</div>
+                      <div class="calculator-item-value">2 760 Kč</div>
+                    </div>  
+                    <div class="calculator-item-float">
+                      <div class="calculator-item-label">Roční úspora na dani</div>
+                      <div class="calculator-item-value">0 Kč</div>
+                    </div>
+                  </div> 
+                   
+                </div>
+              
+              </div>   <!-- /.calculator-complex-content -->
+              
+              
+              
+				    </div>      
+            
+            
+            
+            
+            <div class="col-md-6 stick-in-parent"> 
+              <div class="separator hidden-xs hidden-md hidden-lg"></div>
+              <h2>Varianty spoření</h2>   
+                <div class="complex-calculator-results">
+                  <div class="complex-calculator-results-tabs">
+                    <a href="#" class="nav-tabs-dropdown xxs"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->
+                    <ul class="tabs-3 nav nav-pills nav-tabs-wrapper xxs" <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->     
+                        <li class="active">
+                          <div class="tabs-3-tab"> 
+                            <a data-toggle="tab" href="#1">Pesimistické<span class="tabs-3-arrow"></span></a>
+                          </div>  
+                        </li>
+                        <li>
+                          <div class="tabs-3-tab">
+                            <a data-toggle="tab" href="#2">Neutrální<span class="tabs-3-arrow"></span></a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="tabs-3-tab">
+                            <a data-toggle="tab" href="#3">Optimistické<span class="tabs-3-arrow"></span></a>
+                          </div>
+                        </li>
+                     </ul>  <!-- /.tabs-3 -->
+                   </div>    
+                  <div class="tab-content clearfix">
+      			       <div class="tab-pane active" id="1">
+                    
+                   <div class="complex-calculator-results-body">
+                      <div class="calculator-results-item">
+                        <div class="calculator-results-title">Celková částka: <span class="calculator-results-value bigger-text orange-text bold">1 463 096 Kč</span></div>
+                      </div>
+                      <div class="calculator-separator"></div>
+                        <div class="tab-pane active" id="detail-1"> <!-- tab uvnitř tabu - p5eklik mezi detailem a grafem. Toto je Detail -->
+                        <div class="row complex-calculator-results-body-inner">
+                          <div class="col-sm-6">
+                            <div class="calculator-results-title">Pravidelné investice</div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-value bigger-text bold">473 200 Kč</div>
+                            </div>
+                            <div class="calculator-separator"></div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-label">Vklad</div>
+                              <div class="calculator-results-value">350 000 Kč</div>
+                            </div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-label">Výnos</div>
+                              <div class="calculator-results-value">123 200 Kč <span class="smaller-text"> / 3,52%</span></div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="calculator-results-title">Doplňkové penzijní spoření</div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-value bigger-text bold">995 576 Kč</div>
+                            </div>
+                            <div class="calculator-separator"></div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-label">Vklad</div>
+                              <div class="calculator-results-value">720 000 Kč</div>
+                            </div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-label">Výnos</div>
+                              <div class="calculator-results-value">188 640 Kč <span class="smaller-text"> / 2,62%</span></div>
+                            </div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-label">Příspěvek od státu</div>
+                              <div class="calculator-results-value">81 256 Kč</div>
+                            </div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-label">Příspěvek zaměstnavatele</div>
+                              <div class="calculator-results-value">5 680 Kč</div>
+                            </div>
+                            <div class="calculator-separator"></div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-note">Navíc daňová úspora až <span class="blue-text bold">100 000 Kč</span></div>
+                          </div>
+                         </div>      
+                       </div>  
+                       
+                       </div>
+                       
+                       <div class="tab-pane" id="graf-1"> <!-- tab uvnitř tabu - p5eklik mezi detailem a grafem. Toto je Graf -->
+                        <div class="row complex-calculator-results-body-inner">
+                          <div class="col-sm-6">
+                            <div class="calculator-results-title">Pravidelné investice</div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-value bigger-text bold">473 200 Kč</div>
+                            </div>
+                            <div class="calculator-separator"></div>
+                             <div class="donut-graph">      
+                                <div class="graphs-graph" id="cphBody_usrModellingPortfolioFunds_usrGraphDonutPortfolio_graphContainer" style="height: 250px;"> </div>                            
+                                <div class="donut-graph-legend">
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#f89728;"></span></div> <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Jednorázový počáteční vklad</div>
+                                      <div class="donut-graph-legend-value">350 000 Kč</div>
+                                    </div>   
+                                  </div>
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#fdc88e;"></span></div> <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Výnos</div>
+                                      <div class="donut-graph-legend-value">60 000 Kč</div>
+                                    </div>   
+                                  </div>
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#00395a;"></span></div>  <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Roční příspěvek od státu</div>
+                                      <div class="donut-graph-legend-value">81 250 Kč</div>
+                                    </div>   
+                                  </div>
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#9cbacf;"></span></div>  <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Roční příspěvek od zaměstnavatele</div>
+                                      <div class="donut-graph-legend-value">5 680 Kč</div>
+                                    </div>   
+                                  </div>
+                                </div>
+                             </div> 
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="calculator-results-title">Doplňkové penzijní spoření</div>
+                            <div class="calculator-results-item">
+                              <div class="calculator-results-value bigger-text bold">995 576 Kč</div>
+                            </div>
+                            <div class="calculator-separator"></div>
+                             <div class="donut-graph">      
+                                <div class="graphs-graph" id="cphBody_usrModellingPortfolioFunds_usrGraphDonutPortfolio_graphContainer2" style="height: 250px;"> </div>
+                                <div class="donut-graph-legend">
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#f89728;"></span></div> <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Jednorázový počáteční vklad</div>
+                                      <div class="donut-graph-legend-value">230 000 Kč</div>
+                                    </div>   
+                                  </div>
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#fdc88e;"></span></div> <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Výnos</div>
+                                      <div class="donut-graph-legend-value">85 000 Kč</div>
+                                    </div>   
+                                  </div>
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#00395a;"></span></div>  <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Roční příspěvek od státu</div>
+                                      <div class="donut-graph-legend-value">105 050 Kč</div>
+                                    </div>   
+                                  </div>
+                                  <div class="donut-graph-legend-row">  
+                                    <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#9cbacf;"></span></div>  <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                                    <div class="donut-graph-legend-name">
+                                      <div class="donut-graph-legend-title">Roční příspěvek od zaměstnavatele</div>
+                                      <div class="donut-graph-legend-value">30 880 Kč</div>
+                                    </div>   
+                                  </div>
+                                </div>
+                             </div>
+                         </div>      
+                       </div>  
+                       </div>
+                       
+                       <div class="calculator-separator"></div>
+                       
+                       <div class="complex-calculator-results-switcher">
+                         <div class="row">
+                            <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+                             <ul class="tabs-3 nav nav-pills tabs-small-text">    
+                                <li class="active">
+                                  <div class="tabs-3-tab"> 
+                                    <a data-toggle="tab" href="#detail-1">Detail</a>
+                                  </div>  
+                                </li>
+                                <li>
+                                  <div class="tabs-3-tab">
+                                    <a data-toggle="tab" href="#graf-1">Graf</a>
+                                  </div>
+                                </li>
+                             </ul>  <!-- /.tabs-3 --> 
+                            </div> 
+                          </div>   
+                        </div>  
+                    </div>  
+                  
+                      
+                  </div>
+                  
+                  <div class="tab-pane" id="2">
+                      <div class="complex-calculator-results-body">Neutrální</div>
+                  </div>
+                  
+                  <div class="tab-pane" id="3">
+                      <div class="complex-calculator-results-body">Optimistické</div>
+                  </div>
+                  <a class="btn btn-orange full-width" href="">Sjednat smlouvu online &rsaquo;</a>
+                </div>
+				      </div>
+				    </div>     
+          </div> 
+          
+         <div class="separator"></div>
+         
+       </div>
+       
+       
+       <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lobortis mi. Curabitur non tellus at libero fringilla volutpat a id nibh. Pellentesque malesuada lectus vitae aliquet hendrerit. Nulla dapibus, elit eu tempor lobortis, lectus nisl mollis mauris, eget condimentum neque diam et lacus. Mauris tincidunt nisi vel urna rhoncus rutrum. Nulla volutpat vulputate elit eget consequat. Donec quis ex eu sapien vehicula vestibulum. Proin aliquam nisl quis vehicula maximus. Donec tempor blandit libero, vestibulum molestie nulla aliquet sed. Sed et iaculis ligula, vel consequat diam. Phasellus sed quam erat. Nullam id vulputate dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<p>Suspendisse lobortis, dolor et pharetra tincidunt, diam risus finibus ligula, in rutrum lectus nisi at mauris. Curabitur laoreet est id leo ultrices varius. Cras nisi dui, bibendum a molestie nec, lobortis sit amet mauris. Nulla sed eros nec ligula lobortis tincidunt id vitae est. Sed egestas tincidunt vestibulum. Nullam sit amet velit sed lacus vulputate egestas ac vitae justo. Vestibulum rhoncus suscipit vestibulum.</p>
+
+<p>Morbi eu sagittis metus. Praesent posuere enim malesuada tincidunt sagittis. Phasellus lobortis, leo porta dapibus scelerisque, lectus arcu sollicitudin nunc, quis lacinia neque libero sit amet mi. Pellentesque rutrum consequat velit, a efficitur nibh semper id. Suspendisse porta, quam vel tempus viverra, quam nunc luctus neque, vel fermentum eros sem a arcu. Suspendisse convallis sapien purus, iaculis luctus risus semper sit amet. In imperdiet metus velit, ut ultricies turpis pulvinar vitae. </p>
+       </div>
+      
+
+      
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+    
+  </body>                             
+</html>

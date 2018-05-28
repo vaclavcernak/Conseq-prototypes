@@ -1,0 +1,251 @@
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+// ==========================================================================
+// Print styles.
+// Inlined to avoid the additional HTTP request: h5bp.com/r
+// ==========================================================================
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        /*background-color: transparent !important; */
+        color: #000 !important; // Black prints faster: h5bp.com/s
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    .btn-blue,
+    .tabs-3 li.active a {
+    	color: @white !important;
+    }
+    
+    .select-wrapper {
+    	background-image: url(../images/select-arrow-print.png);
+	 }
+    
+    [data-toggle="tooltip"] {
+    	background-image: url(../images/tooltip-print.png);
+		}
+		
+	.star input[type="checkbox"] + label span,
+	.star-checkbox {
+		background-image: url(../images/star-print.png);
+	}	
+	
+	.sorting-combo-btn {
+		background-image: url(../images/double-arrow-print.png);
+	}
+    
+    li.active .tabs-3-arrow {
+    	display: none;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    // Don't show links that are fragment identifiers,
+    // or use the `javascript:` pseudo protocol
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; // h5bp.com/t
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    // Bootstrap specific changes start
+
+    // Bootstrap components
+    .navbar {
+        display: none;
+    }
+    .btn,
+    .dropup > .btn {
+        > .caret {
+            border-top-color: #000 !important;
+        }
+    }
+    .label {
+        border: 1px solid #000;
+    }
+
+    .table {
+        border-collapse: collapse !important;
+
+        td,
+        th {
+            background-color: #fff !important;
+        }
+    }
+    .table-bordered {
+        th,
+        td {
+            border: 1px solid #ddd !important;
+        }
+    }
+
+    // Bootstrap specific changes end
+    
+    
+    /*****/
+    
+ 
+
+    
+  
+    /****/
+    
+    
+    .chart-wrapper {
+        width: 100px !important;
+    }
+    
+    header,
+    .footer,
+    .breadcrumb {
+    	display: none;
+    }
+    
+    .mobile-toggle {
+    	display: none !important;
+    }
+    
+    .responsive-table td.hidden-cell {
+    	display: flex !important;
+    }
+    
+    /***/
+       
+    .select-wrapper {
+    	border: 1px solid #a8a8a8;
+	 }
+		
+	.legend-symbol {
+	}	
+	
+	tr.subtitle td.opened, 
+	tr.subtitle td.closed {
+		padding-left: 0;
+	}
+	
+	.fund-groups tr.fund-item.fund td.name {
+		padding-left: 0;
+	}
+	
+	.responsive-table tr.fund {
+		margin-bottom: 10px;
+	}
+	
+	.responsive-table td.name {
+		padding-top: 20px;
+	}
+
+}
+
+
+
+/***********/
+
+   /*** RESPONSIVE TABLE ***/
+
+@media print and (min-width: @screen-md) {
+    
+    .responsive-table {
+    	display: table !important;
+    }
+    
+    .responsive-table tr {
+    	display: table-row !important;
+    }
+    
+    .responsive-table tr.fund {
+    	background: transparent;
+    }
+    
+    .responsive-table th, 
+    .responsive-table td,
+    .responsive-table td.compare,
+    .responsive-table td.indicator,
+    .responsive-table td.star {
+    	display: table-cell !important;
+    	position: static !important;
+    }
+    
+    .responsive-table td.name {
+    	display: table-cell !important;
+    	padding: 0;
+    	border: 0;
+    	background: transparent;
+    }
+    
+    .responsive-table td.hidden-cell {
+    	display: table-cell !important;
+    }
+    
+    .table-label {
+		display: none !important;
+	}
+    
+}
+
+@media print and (max-width: @screen-sm-max) {
+
+	.tabs-3.nav-tabs-wrapper /*.nav-tabs-dropdown*/ {
+    	display: none !important;
+    }
+    
+
+	.responsive-table th,
+	.responsive-table td {
+		display: flex !important;
+	}
+	
+	.table-label {
+		padding-left: 0;
+	}
+	
+	.table-label,
+	.table-value {
+		display: block !important;
+	}
+	
+}

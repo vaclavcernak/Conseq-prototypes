@@ -1,0 +1,678 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq Seznam fondů</title>
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li><a href="">CONSEQ</a><span class="divider">/</span></li>
+              <li><a href="">Investice</a><span class="divider">/</span></li>
+              <li>Přehled fondů</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+     
+      <div class="container">
+          
+        <h1>Na této stránce máte k dispozici kompletní seznam fondů v naší nabídce.<br>Fondy můžete filtrovat podle různých kritérií:</h1>
+          <ul>
+            <li>Investiční společnost (tzv. "fondová rodina");</li>
+            <li>Základní zařazení fondu podle třídy aktiv, do kterých fond investuje (akcie, dluhopisy, peněžní trh, komodity atd.);</li>
+            <li>Základní měna fondu.</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>  
+          
+      
+      </div>  <!-- /.container /hlavní obsah pod slideshow -->
+      
+      <div class="bg-blue">
+        <div class="container">  
+          <h3>Výběr fondu</h3>
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+               <label for="invest_spolecnost">Investiční společnost</label>
+               <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Investiční společnost tooltip text. Investiční společnost tooltip text."></a>
+               <div class="select-wrapper">
+                 <select id="invest_spolecnost" class="form-control form-control-select" name="invest_spolecnost">
+                    <option value="">Vyberte</option>
+                    <option value="jedna_moznost">Jedna možnost</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div> 
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                 <label for="trida_aktiv">Třída aktiv</label>
+                 <div class="select-wrapper">
+                   <select id="trida_aktiv" class="form-control form-control-select" name="trida_aktiv">
+                      <option value="">Vyberte</option>
+                      <option value="jedna_moznost">Jedna možnost</option>
+                      <option value="druha_moznost">Druhá možnost</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>   
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                 <label for="mena_fondu">Měna fondu</label>
+                 <div class="select-wrapper">
+                   <select id="mena_fondu" class="form-control form-control-select" name="mena_fondu">
+                      <option value="">Vyberte</option>
+                      <option value="jedna_moznost">Jedna možnost</option>
+                      <option value="druha_moznost">Druhá možnost</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>   
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                 <label for="vykonnost_mena">Výkonnost v měně</label>
+                 <div class="select-wrapper">
+                   <select id="vykonnost_mena" class="form-control form-control-select" name="vykonnost_mena">
+                      <option value="">Vyberte</option>
+                      <option value="jedna_moznost">Jedna možnost</option>
+                      <option value="druha_moznost">Druhá možnost</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>   
+            </div>
+          </div>
+          
+          
+          <div class="row hidden" id="detailed-search">
+              <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+               <label for="invest_spolecnost2">Investiční společnost 2</label>
+               <div class="select-wrapper">
+                 <select id="invest_spolecnost2" class="form-control form-control-select" name="invest_spolecnost"2>
+                    <option value="">Vyberte</option>
+                    <option value="jedna_moznost">Jedna možnost</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div> 
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                 <label for="trida_aktiv2">Třída aktiv 2</label>
+                 <div class="select-wrapper">
+                   <select id="trida_aktiv2" class="form-control form-control-select" name="trida_aktiv2">
+                      <option value="">Vyberte</option>
+                      <option value="jedna_moznost">Jedna možnost</option>
+                      <option value="druha_moznost">Druhá možnost</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>   
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                 <label for="mena_fondu2">Měna fondu 2</label>
+                 <div class="select-wrapper">
+                   <select id="mena_fondu2" class="form-control form-control-select" name="mena_fondu2">
+                      <option value="">Vyberte</option>
+                      <option value="jedna_moznost">Jedna možnost</option>
+                      <option value="druha_moznost">Druhá možnost</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>   
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                 <label for="vykonnost_mena2">Výkonnost v měně 2</label>
+                 <div class="select-wrapper">
+                   <select id="vykonnost_mena2" class="form-control form-control-select" name="vykonnost_mena2">
+                      <option value="">Vyberte</option>
+                      <option value="jedna_moznost">Jedna možnost</option>
+                      <option value="druha_moznost">Druhá možnost</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>   
+            </div> 
+              </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <div class="checkbox-radio checkbox-radio-big">
+                  <input id="favourite_only" class="form-control form-control-checkbox" name="favourite_only" type="checkbox">
+                  <label class="form-label" for="favourite_only"><span></span>Zobrazit oblíbené</label>
+                </div>
+              </div>  
+           </div> 
+           <div class="col-sm-6">
+             <div class="extended-search"><a class="more-link" href="javascript:void(null)" onclick="toggler('detailed-search');">Zobrazit rozšířené hledání</a></div> <!-- Po kliknutí by se měl měnit název: Zobrazit rozšířené hledání / Skrýt rozšířené hledání -->
+           </div>
+           
+           
+           
+           <div class="col-sm-offset-6 col-sm-6 col-md-offset-0 col-md-3">
+             <a class="btn btn-blue full-width" href="">Filtrovat</a>
+           </div>
+        </div>   
+        
+        
+          
+        </div> 
+      </div>  <!-- /.bg-blue -->
+      
+      <div class="separator-empty"></div>
+      
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-9"> <!-- taby -->
+            <a href="#" class="nav-tabs-dropdown xxs"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->
+            <ul class="tabs-3 nav nav-pills nav-tabs-wrapper xxs">   <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) --> 
+              <li class="active">
+                <div class="tabs-3-tab"> 
+                  <a data-toggle="tab" href="#1a">Obecné informace<span class="tabs-3-arrow"></span></a>
+                </div>  
+              </li>
+              <li>
+                <div class="tabs-3-tab">
+                  <a data-toggle="tab" href="#2a">Výkonnost fondů<span class="tabs-3-arrow"></span></a>
+                </div>
+              </li>
+              
+            </ul>  <!-- /.tabs-3 -->  
+          </div>
+          
+          <div class="col-md-3 hidden-xs hidden-sm"> <!-- Porovnat - zmizí u tabletů a mobilu - tam je button zduplikován v kodu pod výpisem fondů -->
+                  <a class="btn btn-white btn-compare full-width btn-border-black big-text" href="">Porovnat</a>
+          </div>
+        </div>
+            <div class="tab-content clearfix">   <!-- "tab-content" je div pro zabalení conentu všech tabů-->
+      			  <div class="tab-pane active" id="1a">
+              
+              <div class="sorting-combo hidden-md hidden-lg"> <!--  řazení - viditelné pouze u mobilu a tabletu -->
+                <div class="form-item">
+                   <div class="select-wrapper">
+                     <select id="radit_podle" class="form-control form-control-select" name="radit_podle">
+                        <option value="">Řadit podle názvu</option>
+                        <option value="jedna_moznost">Řadit podle ISINu</option>
+                        <option value="druha_moznost">Řadit podle třídy</option>
+                        <option value="treti_moznost">Řadit podle měny</option>
+                        <option value="ctvrta_moznost">Řadit podle regionálního zaměření</option>
+                        <option value="pata_moznost">...</option>
+                     </select> 
+                   </div>
+                </div> 
+                <input type="button" class="sorting-combo-btn" value="Řadit"> <!--  button pro řazení -->
+              </div>
+              
+              
+              
+                <table class="fund-table responsive-table">
+                  <thead>
+                    <tr class="table-header"> 
+                      <th></th>
+                      <th class="name"><a href="">Název</a></th>
+                      <th><a href="">ISIN</a></th>
+                      <th><a href="">Třída&nbsp;aktiv</a></th>
+                      <th><a href="">Měna</a></th>
+                      <th><a href="">Regionální&nbsp;zaměření</a></th>
+                      <th class="risk"><a href="">Rizikový&nbsp;faktor</a></th>
+                      <th class="hidden-md hidden-lg"></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>  
+                    <tr class="fund">
+                      <td class="star">
+                        <!-- <input id="1" class="form-control form-control-checkbox" name="1" type="checkbox">
+                        <label class="form-label" for="1"><span></span></label> -->
+                        <a href="#" id="1" class="star-checkbox"></a>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</a></td>
+                      <td class="hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Smíšený</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="hidden-cell"><div class="table-label">Regionální zaměření</div><div class="table-value">Rozvíjející se trhy - Evropa</div></td>
+                      <td class="risk hidden-cell"><div class="table-label">Rizikový faktor</div><div class="table-value"><span>1</span><span class="active">2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div></td>
+                      <td class="indicator hidden-md hidden-lg"><span class="arrow arrow-up"></span></td>  
+                      <td class="compare">
+                        <!-- <input id="2" class="form-control form-control-checkbox" name="2" type="checkbox">
+                        <label class="form-label" for="2"><span></span></label> -->
+                        <a href="#" id="2" class="input-checkbox"></a>
+                      </td>
+                    </tr>
+                    <tr class="fund">
+                      <td class="star">
+                        <!-- <input id="3" class="form-control form-control-checkbox" name="3" type="checkbox">
+                        <label class="form-label" for="3"><span></span></label> -->
+                        <a href="#" id="3" class="star-checkbox checked"></a>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian Pacific Equity (USD)</a></td>
+                      <td class="hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Komoditní</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="hidden-cell"><div class="table-label">Regionální zaměření</div><div class="table-value">Rozvíjející se trhy - Evropa</div></td>
+                      <td class="risk hidden-cell"><div class="table-label">Rizikový faktor</div><div class="table-value"><span>1</span><span class="active">2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div></td>
+                      <td class="indicator hidden-md hidden-lg"><span class="arrow arrow-down"></span></td>  
+                      <td class="compare">
+                        <!-- <input id="4" class="form-control form-control-checkbox" name="4" type="checkbox">
+                        <label class="form-label" for="4"><span></span></label> -->
+                        <a href="#" id="4" class="input-checkbox checked"></a>
+                      </td>
+                    </tr>
+                    <tr class="fund">
+                      <td class="star">
+                        <input id="5" class="form-control form-control-checkbox" name="5" type="checkbox">
+                        <label class="form-label" for="5"><span></span></label>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global (USD)</a></td>
+                      <td class="hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU056648640201</div></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Akciový</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="hidden-cell"><div class="table-label">Regionální zaměření</div><div class="table-value">Vyspělé trhy - Asie, Pacifik</div></td>
+                      <td class="risk hidden-cell"><div class="table-label">Rizikový faktor</div><div class="table-value"><span>1</span><span>2</span><span>3</span><span>4</span><span class="active">5</span><span>6</span><span>7</span></div></td>
+                      <td class="indicator hidden-md hidden-lg"><span class="arrow arrow-down"></span></td>  
+                      <td class="compare">
+                        <input id="6" class="form-control form-control-checkbox" name="6" type="checkbox">
+                        <label class="form-label" for="6"><span></span></label>
+                      </td>
+                    </tr>
+                    <tr class="fund">
+                      <td class="star">
+                        <input id="7" class="form-control form-control-checkbox" name="7" type="checkbox">
+                        <label class="form-label" for="7"><span></span></label>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian (EUR)</a></td>
+                      <td class="hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisový</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="hidden-cell"><div class="table-label">Regionální zaměření</div><div class="table-value">Rozvíjející se trhy - globálně</div></td>
+                      <td class="risk hidden-cell"><div class="table-label">Rizikový faktor</div><div class="table-value"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="active">7</span></div></td>
+                      <td class="indicator hidden-md hidden-lg"><span class="arrow arrow-up"></span></td>  
+                      <td class="compare">
+                        <input id="8" class="form-control form-control-checkbox" name="8" type="checkbox">
+                        <label class="form-label" for="8"><span></span></label>
+                      </td>
+                    </tr>
+                    <tr class="paginator-net">
+              			 <td colspan="12">
+                      <table>
+              				 <tr>
+              					<td><a href="">&lt;&lt;</a></td>
+                        <td><a href="">...</a></td>
+                        <td><span>5</span></td>
+                        <td><a href="">6</a></td>
+                        <td><a href="">7</a></td>
+                        <td><a href="">8</a></td>
+                        <td><a href="">...</a></td>
+                        <td><a href="">&gt;&gt;</a></td>
+              				 </tr>
+              			  </table>
+                     </td>
+              		  </tr>
+                  </tbody>  
+                </table>
+                
+             <!--    
+                <div class="numList">
+                  <ul class="paginator">
+                    <li class="btn-prev"><a></a></li>
+                    <li class="active"><a>1</a></li>
+                    <li class=""><a>2</a></li>
+                    <li class=""><a>3</a></li>
+                    <li class=""><a>4</a></li>
+                    <li class="btn-next"><a></a></li>
+                  </ul>
+                </div>
+            -->   
+              <a class="btn btn-white btn-compare btn-border-black hidden-md hidden-lg" href="">Porovnat</a>   <!-- Porovnat - Zduplikovaný button - viditelný pouze u tabletů/mobilů -->
+             
+                <div class="total-items">
+                  položek celkem <span>786</span>
+                </div>
+                
+                
+                
+                <div class="more-link-div download">
+                  <a href="">Export do XLS</a>
+                </div>
+                
+
+      				</div>  <!-- /.tab-pane 1a -->
+              
+              
+              
+      				<div class="tab-pane" id="2a">
+              
+              <div class="sorting-combo hidden-md hidden-lg"> <!--  řazení - viditelné pouze u mobilu a tabletu -->
+                <div class="form-item">
+                   <div class="select-wrapper">
+                     <select id="radit_podle" class="form-control form-control-select" name="radit_podle">
+                        <option value="">Řadit podle názvu</option>
+                        <option value="jedna_moznost">Řadit podle ISINu</option>
+                        <option value="druha_moznost">Řadit podle třídy</option>
+                        <option value="treti_moznost">Řadit podle měny</option>
+                        <option value="ctvrta_moznost">Řadit podle regionálního zaměření</option>
+                        <option value="pata_moznost">...</option>
+                     </select> 
+                   </div>
+                </div> 
+                <input type="button" class="sorting-combo-btn" value="Řadit"> <!--  button pro řazení -->
+              </div>
+              
+              
+              
+                <table class="fund-table responsive-table">
+                  <thead>
+                    <tr class="table-header"> 
+                      <th></th>
+                      <th class="name"><a href="">Název</a></th>
+                      <th class=""><a href="">Třída aktiv</a></th>
+                      <th class=""><a href="">Měna</a></th>
+                      <th class="alignR"><a href="">Datum platnosti ceny</a></th>
+                      <th class="alignR"><a href="">Cena za kus</a></th>
+                      <th class="alignR"><a href="">1M&nbsp;(%)</a></th>
+                      <th class="alignR"><a href="">3M&nbsp;(%)</a></th>
+                      <th class="alignR"><a href="">6M&nbsp;(%)</a></th>
+                      <th class="alignR"><a href="">1&nbsp;rok (%)</a></th>
+                      <th class="alignR"><a href="">3&nbsp;roky (%)</a></th>
+                      <th class="alignR"><a href="">5&nbsp;let (%)</a></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>  
+                    <tr class="fund">
+                      <td class="star">
+                        <input id="20" class="form-control form-control-checkbox" name="20" type="checkbox">
+                        <label class="form-label" for="20"><span></span></label>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</a></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Smíšený</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Datum platnosti ceny</div><div class="table-value">14.12.2016</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Cena za kus</div><div class="table-value">207,1150</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1M&nbsp;(%)</div><div class="table-value">2,46%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3M&nbsp;(%)</div><div class="table-value">3,46%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">6M&nbsp;(%)</div><div class="table-value">1,52%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1&nbsp;rok (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3&nbsp;roky (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">5&nbsp;let (%)</div><div class="table-value">3,25%</div></td>
+                      <td class="indicator"><span class="arrow arrow-up"></span></td>  
+                      <td class="compare">
+                        <input id="9" class="form-control form-control-checkbox" name="9" type="checkbox">
+                        <label class="form-label" for="9"><span></span></label>
+                      </td>
+                    </tr>
+                    <tr class="fund">
+                      <td class="star">
+                        <input id="21" class="form-control form-control-checkbox" name="21" type="checkbox">
+                        <label class="form-label" for="21"><span></span></label>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian Pacific Equity (USD)</a></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Komoditní</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Datum platnosti ceny</div><div class="table-value">14.12.2016</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Cena za kus</div><div class="table-value">14&nbsp;348,5700</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1M&nbsp;(%)</div><div class="table-value">-5,46%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3M&nbsp;(%)</div><div class="table-value">3,46%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">6M&nbsp;(%)</div><div class="table-value">1,52%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1&nbsp;rok (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3&nbsp;roky (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">5&nbsp;let (%)</div><div class="table-value">3,25%</div></td>
+                      <td class="indicator"><span class="arrow arrow-down"></span></td>  
+                      <td class="compare">
+                        <input id="10" class="form-control form-control-checkbox" name="10" type="checkbox">
+                        <label class="form-label" for="10"><span></span></label>
+                      </td>
+                    </tr>
+                    <tr class="fund">
+                      <td class="star">
+                        <input id="22" class="form-control form-control-checkbox" name="22" type="checkbox">
+                        <label class="form-label" for="22"><span></span></label>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global (USD)</a></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Akciový</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Datum platnosti ceny</div><div class="table-value">14.12.2016</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Cena za kus</div><div class="table-value">107,1480</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1M&nbsp;(%)</div><div class="table-value">14,50%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3M&nbsp;(%)</div><div class="table-value">3,46%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">6M&nbsp;(%)</div><div class="table-value">1,52%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1&nbsp;rok (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3&nbsp;roky (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">5&nbsp;let (%)</div><div class="table-value">3,25%</div></td>
+                      <td class="indicator"><span class="arrow arrow-down"></span></td>  
+                      <td class="compare">
+                        <input id="11" class="form-control form-control-checkbox" name="11" type="checkbox">
+                        <label class="form-label" for="11"><span></span></label>
+                      </td>
+                    </tr>
+                    <tr class="fund">
+                      <td class="star">
+                        <input id="23" class="form-control form-control-checkbox" name="23" type="checkbox">
+                        <label class="form-label" for="23"><span></span></label>
+                      </td>
+                      <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian (EUR)</a></td>
+                      <td class="hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisový</div></td>
+                      <td class="hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Datum platnosti ceny</div><div class="table-value">14.12.2016</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">Cena za kus</div><div class="table-value">31,3600</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1M&nbsp;(%)</div><div class="table-value">2,86%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3M&nbsp;(%)</div><div class="table-value">3,46%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">6M&nbsp;(%)</div><div class="table-value">1,52%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">1&nbsp;rok (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">3&nbsp;roky (%)</div><div class="table-value">5,83%</div></td>
+                      <td class="alignR hidden-cell"><div class="table-label">5&nbsp;let (%)</div><div class="table-value">3,25%</div></td>
+                      <td class="indicator"><span class="arrow arrow-up"></span></td>                      
+                      <td class="compare">
+                        <input id="12" class="form-control form-control-checkbox" name="12" type="checkbox">
+                        <label class="form-label" for="12"><span></span></label>
+                      </td>
+                    </tr>                    
+                  </tbody>  
+                </table>
+                
+             
+                <div class="numList">
+                  <ul class="paginator">
+                    <li class="btn-prev"><a></a></li>
+                    <li class="active"><a>1</a></li>
+                    <li class=""><a>2</a></li>
+                    <li class=""><a>3</a></li>
+                    <li class=""><a>4</a></li>
+                    <li class="btn-next"><a></a></li>
+                  </ul>
+                </div>
+                
+                <a class="btn btn-white btn-compare btn-border-black hidden-md hidden-lg" href="">Porovnat</a>   <!-- Porovnat - Zduplikovaný button - viditelný pouze u tabletů/mobilů -->
+                
+                <div class="total-items">
+                  položek celkem <span>786</span>
+                </div>
+           
+                
+                
+                
+                <div class="more-link-div download">
+                  <a href="">Export do XLS</a>
+                </div>
+
+      				</div>  <!-- /.tab-pane 2a -->
+              
+              
+      			</div>  <!-- /.tab-content -->     
+     
+       </div>  <!-- /.container -->
+      
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>

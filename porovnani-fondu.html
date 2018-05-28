@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">        
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->  
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    
+    
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/custom.js"></script>
+    
+    
+    <SCRIPT type="" javascript''="" text="">   $(function () {       
+    Highcharts.chart('cphBody_usrGraphCompare_graphContainer', {
+      chart: { backgroundColor: 'transparent',
+               plotBorderColor: 'lightGray',
+               plotBorderWidth: 0,
+               type: 'line', 
+               zoomType: 'x',
+               marginLeft: 30
+              },
+               
+      title: { text: '',
+               x: -20 },
+      subtitle: { text: '',
+                  x: -20 },
+      xAxis: { gridLineDashStyle: 'ShortDash',
+               gridLineWidth: 0, 
+               gridLineColor: 'silver',
+               type: 'datetime',            
+               lineColor: 'silver',            
+                  title: {  text: '', 
+                            enabled: false },
+                  labels: { style: { 
+                              color: '#a8a8a7'},
+                            format: '{value:%d.%m.%Y}',
+                            rotation: 0,
+                            align: 'center' } 
+              },
+      yAxis: { gridLineWidth: 1, 
+               gridLineColor: 'silver',
+               title: {  text: '' },
+               labels: {  formatter: function() {
+       return this.value+"%";
+    },
+                          style: { 
+                          color: '#a8a8a7'} },
+               plotLines: [{ value: 0,                  
+                             width: 1,                  
+                            color: '#f89728' }]
+              },
+      tooltip: { //enabled : true,
+                 pointFormat: '<b>{point.y}</b> ({point.change}%)',
+                 valueDecimals: 2,
+                 split: true,
+                 //shadow: false
+                 //useHTML: true,
+                 },
+      plotOptions: {series: {
+                      enableMouseTracking: true, 
+                      compare: 'percent', 
+                      showInNavigator: true,
+                      marker: {
+                        enabled: false
+                      }
+            } },
+      legend: { enabled: true,  
+                symbolWidth: 25,
+                //symbolHeight: 0,
+                //symbolPadding: 10,
+                //layout: 'vertical',
+                //floating: true,
+                align: 'left',
+                //verticalAlign: 'bottom',
+                itemMarginTop: 5,
+                itemMarginBottom: 5,
+                itemStyle: {
+                  lineHeight: '14px',
+                  fontSize: '14px',
+                  fontWeight: 'normal',
+                  fontFamily: 'Tahoma',
+                  }
+                 },
+    credits: { enabled: false },
+    navigation: { buttonOptions: { 
+                    enabled: false },
+                },
+    series: [
+    
+              { name: 'ACTIVE Invest dynamický',
+                data: [[Date.UTC(2018, 5, 17), 1.0702],[Date.UTC(2018, 5, 18), 1.0725],[Date.UTC(2018, 5, 19), 1.0789],[Date.UTC(2018, 5, 20), 1.0824],[Date.UTC(2018, 5, 21), 1.0862],[Date.UTC(2018, 5, 22), 1.0887],[Date.UTC(2018, 5, 23), 1.0912],[Date.UTC(2018, 5, 24), 1.0793],[Date.UTC(2018, 5, 25), 1.0723],[Date.UTC(2018, 5, 26), 1.0693],[Date.UTC(2018, 5, 27), 1.0541],[Date.UTC(2018, 5, 28), 1.0637],[Date.UTC(2018, 5, 29), 1.0803],[Date.UTC(2018, 5, 30), 1.0891],[Date.UTC(2018, 6, 1), 1.0914],[Date.UTC(2018, 6, 2), 1.0910],[Date.UTC(2018, 6, 3), 1.0920],[Date.UTC(2018, 6, 4), 1.0915],[Date.UTC(2018, 6, 5), 1.0905],[Date.UTC(2018, 6, 6), 1.0895],[Date.UTC(2018, 6, 7), 1.0833]] },
+               { name: 'Aberdeen Global',              
+                  data: [[Date.UTC(2018, 5, 17), 1.0432],[Date.UTC(2018, 5, 18), 1.0455],[Date.UTC(2018, 5, 19), 1.0475],[Date.UTC(2018, 5, 20), 1.0499],[Date.UTC(2018, 5, 21), 1.0523],[Date.UTC(2018, 5, 22), 1.0538],[Date.UTC(2018, 5, 23), 1.0553],[Date.UTC(2018, 5, 24), 1.0482],[Date.UTC(2018, 5, 25), 1.0462],[Date.UTC(2018, 5, 26), 1.0442],[Date.UTC(2018, 5, 27), 1.0359],[Date.UTC(2018, 5, 28), 1.0407],[Date.UTC(2018, 5, 29), 1.05],[Date.UTC(2018, 5, 30), 1.055],[Date.UTC(2018, 6, 1), 1.0563],[Date.UTC(2018, 6, 2), 1.0573],[Date.UTC(2018, 6, 3), 1.0583],[Date.UTC(2018, 6, 4), 1.0563],[Date.UTC(2018, 6, 5), 1.0553],[Date.UTC(2018, 6, 6), 1.0543],[Date.UTC(2018, 6, 7), 1.0522]] },
+               { name: 'Aberdeen Global',              
+                 data: [[Date.UTC(2018, 5, 17), 1.0239],[Date.UTC(2018, 5, 18), 1.0242],[Date.UTC(2018, 5, 19), 1.0249],[Date.UTC(2018, 5, 20), 1.0254],[Date.UTC(2018, 5, 21), 1.0267],[Date.UTC(2018, 5, 22), 1.0274],[Date.UTC(2018, 5, 23), 1.0279],[Date.UTC(2018, 5, 24), 1.0277],[Date.UTC(2018, 5, 25), 1.0267],[Date.UTC(2018, 5, 26), 1.0260],[Date.UTC(2018, 5, 27), 1.0251],[Date.UTC(2018, 5, 28), 1.0253],[Date.UTC(2018, 5, 29), 1.028],[Date.UTC(2018, 5, 30), 1.0296],[Date.UTC(2018, 6, 1), 1.0298],[Date.UTC(2018, 6, 2), 1.0295],[Date.UTC(2018, 6, 3), 1.0300],[Date.UTC(2018, 6, 4), 1.0302],[Date.UTC(2018, 6, 5), 1.0305],[Date.UTC(2018, 6, 6), 1.0299],[Date.UTC(2018, 6, 7), 1.0296]] }
+              ],
+    rangeSelector: {enabled:false, 
+                    selected: 0, 
+                    allButtonsEnabled: false, 
+                    inputEnabled: false },
+    dataGrouping : { units : [ ['month',[1, 3, 6]] ['year', [1]] ]   },
+    navigator: {
+        enabled:true,
+        xAxis: {
+          labels: {
+             format: '{value:%d.%m.%Y}'
+                }
+            }},
+    colors: ['#f89728', '#00395a', '#a8a8a7']       
+  });   });  
+</SCRIPT>  
+
+    
+    <title>Conseq Porovnání fondů</title>
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li><a href="">CONSEQ</a><span class="divider">/</span></li>
+              <li><a href="">Investice</a><span class="divider">/</span></li>
+              <li>Porovnání fondů</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+     
+      <div class="container">   <!-- hlavní obsah pod slideshow -->
+      
+      
+       <h1>POROVNÁNÍ FONDŮ</h1>  
+       
+       <h2>Výkonnost</h2> 
+       
+       <div class="row">
+         <div class="col-sm-12 col-md-5"> <!-- taby -->
+            <a href="#" class="nav-tabs-dropdown xxs"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->
+            <ul class="tabs-3 nav nav-pills nav-tabs-wrapper xxs tabs-small-text">   <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) --> 
+              <li class="active">
+                <div class="tabs-3-tab"> 
+                  <a data-toggle="tab" href="#1a">1 rok<span class="tabs-3-arrow"></span></a>
+                </div>  
+              </li>
+              <li>
+                <div class="tabs-3-tab">
+                  <a data-toggle="tab" href="#2a">3 roky<span class="tabs-3-arrow"></span></a>
+                </div>
+              </li>
+               <li>
+                <div class="tabs-3-tab">
+                  <a data-toggle="tab" href="#3a">5 let<span class="tabs-3-arrow"></span></a>
+                </div>
+              </li>
+              
+            </ul>  <!-- /.tabs-3 -->  
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 pull-graph-select">
+              <div class="form-item">
+                <label for="od">Od</label>
+                <input id="od" class="form-control date datepicker" name="od" type="date">
+              </div>   
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-2 pull-graph-select">
+              <div class="form-item">
+                <label for="do">Do</label>
+                <input id="do" class="form-control date datepicker" name="do" type="date">
+              </div>   
+          </div>
+          <div class="col-sm-4 col-md-3 pull-graph-select">
+              <div class="form-item">
+                 <label for="vykonnost_mena2">Výkonnost v měně</label>
+                 <div class="select-wrapper">
+                   <select id="vykonnost_mena" class="form-control form-control-select" name="vykonnost_mena">
+                      <option value="">CZK</option>
+                      <option value="jedna_moznost">EUR</option>
+                      <option value="druha_moznost">USD</option>
+                      <option value="treti_moznost">Třetí možnost</option>
+                      <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                   </select> 
+                 </div>
+              </div>  
+           </div> 
+       </div>
+       
+       <DIV class="graphs-graph mar-bot-30" id="cphBody_usrGraphCompare_graphContainer" style="height: 400px; width:100%;"></DIV>
+       
+       <div class="more-link-div download more-link-graph">
+           <a href="">Export do XLS</a>
+       </div>
+       
+       <div class="compare-funds">  <!-- tabulka porovnání fondů -->
+    
+          <div class="row">   
+          
+            <div class="hidden-xs hidden-sm col-md-3">
+              <div class="name"></div>
+              <div class="cell">Aktuální ČOJ / PL</div>
+              <div class="cell">Roční maximum</div>
+              <div class="cell">Roční minimum</div>
+              <div class="cell">Objem aktiv fondu</div>
+              <div class="cell">Investiční společnost</div>
+              <div class="cell">Datum založení</div>
+              <div class="cell">Investiční manažer</div>
+              <div class="cell">Typ fondu</div>
+              <div class="cell">Měna denominace</div>
+              <div class="cell">Manažerský poplatek</div>
+            </div>    
+            
+            <div class="col-md-3">  
+              <span class="close-btn">X</span> 
+              <div class="name">
+                <span class="star">
+                  <input id="1" class="form-control form-control-checkbox" name="1" type="checkbox">
+                  <label class="form-label" for="1"><span></span></label>
+                </span>
+                <span class="cell-text">Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</span>
+              </div> 
+              <div class="cell"><div class="table-label">Aktuální ČOJ / PL</div><div class="table-value"><span class="bigger-text bold">115,23 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Roční maximum</div><div class="table-value"><span class="bigger-text bold">115,63 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Roční minimum</div><div class="table-value"><span class="bigger-text bold">113,74 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Objem aktiv fondu</div><div class="table-value">-</div></div>
+              <div class="cell"><div class="table-label">Investiční společnost</div><div class="table-value">Amundi Funds</div></div>
+              <div class="cell"><div class="table-label">Datum založení</div><div class="table-value">24. 6. 2014</div></div> 
+              <div class="cell"><div class="table-label">Investiční manažer</div><div class="table-value">Amundi Luxembourg S.A.</div></div>
+              <div class="cell"><div class="table-label">Typ fondu</div><div class="table-value">dluhopisový</div></div>
+              <div class="cell"><div class="table-label">Měna denominace</div><div class="table-value">CZK</div></div>
+              <div class="cell"><div class="table-label">Manažerský poplatek</div><div class="table-value">0,80% ročně z příjmu investice</div></div>
+            </div>  
+             
+            <div class="col-md-3">  
+              <span class="close-btn">X</span>
+              <div class="name">
+                <span class="star">
+                  <input id="3" class="form-control form-control-checkbox" name="3" type="checkbox">
+                  <label class="form-label" for="3"><span></span></label>
+                </span>
+                <span class="cell-text">Aberdeen Global - Asian Pacific Equity (USD)</span>
+              </div>
+              <div class="cell"><div class="table-label">Aktuální ČOJ / PL</div><div class="table-value"><span class="bigger-text bold">115,23 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Roční maximum</div><div class="table-value"><span class="bigger-text bold">115,63 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Roční minimum</div><div class="table-value"><span class="bigger-text bold">113,74 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Objem aktiv fondu</div><div class="table-value">-</div></div>
+              <div class="cell"><div class="table-label">Investiční společnost</div><div class="table-value">Amundi Funds</div></div>
+              <div class="cell"><div class="table-label">Datum založení</div><div class="table-value">24. 6. 2014</div></div>
+              <div class="cell"><div class="table-label">Investiční manažer</div><div class="table-value">Amundi Luxembourg S.A.</div></div>
+              <div class="cell"><div class="table-label">Typ fondu</div><div class="table-value">dluhopisový</div></div>
+              <div class="cell"><div class="table-label">Měna denominace</div><div class="table-value">CZK</div></div>
+              <div class="cell"><div class="table-label">Manažerský poplatek</div><div class="table-value">0,80% ročně z příjmu investice</div></div>
+            </div>
+            
+            <div class="col-md-3">   
+              <span class="close-btn">X</span> 
+              <div class="name">
+                <span class="star">
+                  <input id="5" class="form-control form-control-checkbox" name="5" type="checkbox">
+                  <label class="form-label" for="5"><span></span></label>
+                </span>
+                <span class="cell-text">Aberdeen Global - Asian Local Currency  Bond (USD)</span>
+              </div>
+              <div class="cell"><div class="table-label">Aktuální ČOJ / PL</div><div class="table-value"><span class="bigger-text bold">115,23 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Roční maximum</div><div class="table-value"><span class="bigger-text bold">115,63 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Roční minimum</div><div class="table-value"><span class="bigger-text bold">113,74 CZK</span> <span class="smaller-text">(23.2.2016)</span></div></div>
+              <div class="cell"><div class="table-label">Objem aktiv fondu</div><div class="table-value">-</div></div>
+              <div class="cell"><div class="table-label">Investiční společnost</div><div class="table-value">Amundi Funds</div></div>
+              <div class="cell"><div class="table-label">Datum založení</div><div class="table-value">24. 6. 2014</div></div>
+              <div class="cell"><div class="table-label">Investiční manažer</div><div class="table-value">Amundi Luxembourg S.A.</div></div>
+              <div class="cell"><div class="table-label">Typ fondu</div><div class="table-value">dluhopisový</div></div>
+              <div class="cell"><div class="table-label">Měna denominace</div><div class="table-value">CZK</div></div>
+              <div class="cell"><div class="table-label">Manažerský poplatek</div><div class="table-value">0,80% ročně z příjmu investice</div></div>
+            </div> 
+            
+          </div> 
+         </div>
+         
+         <div class="more-link-div mar-top-30">
+          <a href="">Porovnat další fondy  &rsaquo;</a>
+         </div>
+
+      </div>  <!-- /.container /hlavní obsah pod slideshow -->
+      
+     
+       
+      
+      
+      
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>

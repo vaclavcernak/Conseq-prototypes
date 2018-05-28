@@ -1,0 +1,80 @@
+.paginator-net {
+    /*display: inline-block;*/
+    /*padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;*/
+    border: 0 !important;
+    font-size: 16px;
+}
+
+.paginator-net td {
+	/*display: table-cell;*/
+	padding-bottom: 0;
+}
+
+.paginator-net table,
+.paginator-net tbody {
+	width: auto;
+	margin: 0 auto;
+}
+
+.paginator-net table {
+	/*margin-top: 10px;*/
+}
+
+.paginator-net tr {
+	border: 0 !important;
+}
+ 
+.paginator-net table > tbody > tr > td {
+    display: table-cell;
+}
+ 
+.paginator-net table > tbody > tr > td > a,
+.paginator-net table > tbody > tr > td > span {
+    position: relative;
+    float: left;
+    padding: 8px 8px;
+    text-decoration: none;
+    color: #a8a8a8;
+    /*background-color: #ffffff;*/
+    /*border: 1px solid #dddddd;*/
+    margin-left: -1px;
+}
+ 
+.paginator-net table > tbody > tr > td > span {
+    position: relative;
+    float: left;
+    padding: 8px 8px;
+    text-decoration: none;    
+    margin-left: -1px;
+    z-index: 2;
+    color: #00395a;
+    font-weight: bold;
+    /*background-color: #f5f5f5;
+    border-color: #dddddd;*/
+    cursor: default;
+}
+ 
+.paginator-net table > tbody > tr > td:first-child > a,
+.paginator-net table > tbody > tr > td:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+ 
+.paginator-net table > tbody > tr > td:last-child > a,
+.paginator-net table > tbody > tr > td:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+ 
+.paginator-net table > tbody > tr > td > a:hover,
+.paginator-net table > tbody > tr > td > span:hover,
+.paginator-net table > tbody > tr > td > a:focus,
+.paginator-net table > tbody > tr > td > span:focus {
+    /*color: #97310e;
+    background-color: #eeeeee;
+    border-color: #dddddd;*/
+    color: #00395a;
+}

@@ -1,0 +1,803 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <!-- <link rel="stylesheet/less" type="text/css" href="less/bootstrap.less"> -->    
+    <!-- <script src="js/less.min.js" type="text/javascript"></script> -->    
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <title>Conseq Modelování portfolia - editace</title>
+    
+    <SCRIPT type="" javascript''="" text="">    
+    
+      $(function () {       
+      Highcharts.chart('cphBody_usrModellingPortfolioFunds_usrGraphDonutPortfolio_graphContainer', 
+      {  chart: {  
+            plotBackgroundColor: null,
+            plotShadow: false,
+            plotBorderWidth: null,
+            marginBottom: 0, 
+            type: 'pie'},
+         title: {text: '',
+              x: -20},
+         subtitle: {text: '',
+              x: -20},
+         plotOptions: {
+                pie: {
+                  allowPointSelect: true,
+                  cursor: 'pointer', 
+                    
+                  innerSize: '50%',
+                  dataLabels: {
+                      enabled: false,
+                      },
+                      showInLegend: true
+                      }
+                      },
+            tooltip: {enabled : true,
+              pointFormat: '<b>{point.percentage:.1f}%</b>'},
+            legend: {enabled: false,
+                     /*itemMarginBottom: 10,
+                     layout: 'vertical',
+                     //verticalAlign: 'top',
+                     floating: true,    
+                     padding: 0,
+                     symbolHeight: 12,
+                     symbolWidth: 12,
+                     symbolRadius: 0,
+                     align: 'left',
+                     y: 0,
+                     labelFormatter: function() {
+              					//return '<div><span>' + this.name + '</span><br/> <span style="font-size: 22px;">' + this.y + ' %</span></div>';
+                        return '<div><span>' + this.name + '</span><br/> <span style="font-size: 22px;">' + this.y + ' %</span></div>';
+              				},
+                     itemStyle: {
+                          fontSize: '14px',
+                          fontWeight: 'normal',
+                          fontFamily: 'Tahoma',
+                          },            */
+                  },
+            credits: { enabled: false},
+            navigation: { buttonOptions: {enabled: false},},
+            series: [{ colorByPoint: true,
+                      data: [['Fondy fondů akciových',20],['Krátkodobé investice',10],['Opravdu dlouuuuuhý náááázev položky, který se tam snad ani nevejde',30],['Smíšený',40]
+                      ] }],
+              navigator: {enabled:false},
+              colors: ['#f89728', '#fdc88e', '#00395a','#9cbacf']
+              });   });  
+    </SCRIPT>
+    
+    
+    
+    
+    
+     <!-- Výkonnost portfolia -->
+    <SCRIPT type="" javascript''="" text="">   
+      $(function () {
+        
+        Highcharts.setOptions({
+            lang:{
+                rangeSelectorZoom: ''
+            }
+        });
+      
+      
+        Highcharts.chart('cphBody_usrGraphDetail_graphContainer', 
+          {  chart: { 
+                backgroundColor: 'transparent',
+                plotBorderColor: 'lightGray',
+                plotBorderWidth: 0,
+                type: 'line',
+                marginLeft: 40,
+                marginTop: 50,
+                zoomType: 'x'},
+             title: { 
+                text: '',
+                x: -20 },
+            subtitle: {
+                text: '',
+                x: -20 },
+            xAxis: { 
+                ridLineDashStyle: 'ShortDash',
+                gridLineWidth: 0,
+                gridLineColor: 'silver',
+                type: 'datetime',
+                lineColor: 'silver',
+                title: {
+                  text: '',
+                  enabled: false},
+                labels: {
+                  style: { 
+                    color: 'black'},
+                  format: '{value:%d.%m.%Y}',
+                  rotation: 0,
+                  align: 'center' }
+                  },
+              yAxis: { 
+                  gridLineWidth: 1,
+                  gridLineColor: 'silver',
+                  title: { text: ''  },
+                  labels: {
+                    style: { 
+                      color: 'black'} },
+                  plotLines: [{ value: 0,
+                                width: 1,
+                                color: '#f89728' }]
+                    },
+                tooltip: { 
+                    enabled : true,
+                    //pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.change}%)',
+                    pointFormat: '<b>{point.y}</b> ({point.change}%)',
+                    valueDecimals: 2,
+                    split: true },
+                plotOptions: {
+                    series: {
+                      enableMouseTracking: true,
+                      compare: 'percent',
+                      showInNavigator: true} 
+                      },
+                legend: { 
+                      enabled: false,
+                      },                      
+                  credits: { enabled: false },
+                  navigation: {
+                       buttonOptions: {
+                         enabled: false }},
+                  rangeSelector: {
+                        enabled:true,
+                        selected: 0,
+                        allButtonsEnabled: false,
+                        inputEnabled: false,
+                        buttonSpacing: 0,   
+                        buttonPosition: {
+                          x: -5,
+                          y: 0
+                        },
+                        buttonTheme: { // styles for the buttons
+                          fill: 'white',
+                          width: 35,
+                          stroke: '#a8a8a8',
+                          padding: 8,
+                          'stroke-width': 1,
+                          r: 0,
+                          style: {
+                              color: '#a8a8a8',
+                              fontWeight: 'normal',
+                              fontFamily: 'Tahoma',
+                              fontSize: '14px'
+                          },
+                          states: {
+                              hover: {
+                                 color: '',
+                                 fontWeight: 'normal',
+                                 fontFamily: 'Tahoma',
+                                 fontSize: '14px',
+                                 fill: 'white'
+                              },
+                              select: {
+                                  fill: '#00395a',
+                                  style: {
+                                      color: 'white',
+                                      fontWeight: 'normal'
+                                  }
+                              }
+                              // disabled: { ... }
+                          }
+                        },      
+                         buttons: [{
+                          	type: 'month',
+                          	count: 1,
+                          	text: '1M'
+                          }, {
+                          	type: 'month',
+                          	count: 3,
+                          	text: '3M'
+                          }, {
+                          	type: 'month',
+                          	count: 6,
+                          	text: '6M'
+                          }, {
+                          	type: 'year',
+                          	count: 1,
+                          	text: '1 rok'
+                          }]
+                        },
+                  dataGrouping : { 
+                      units : [ ['month',[1, 3, 6]]
+                                ['year',	[1,3,5]] ] },
+                  navigator: {
+                    enabled:true,
+                    xAxis: {
+                      labels: {
+                         format: '{value:%d.%m.%Y}'
+                            }
+                        }},
+                  colors: ['#f89728', '#00395a', '#a8a8a7', '#226b8c', '#939598'],
+                  series: [{ name: 'Název fondu',
+                             data: [[Date.UTC(2016, 5, 20), 1.0824],[Date.UTC(2016, 5, 21), 1.0862],[Date.UTC(2016, 5, 22), 1.0887],[Date.UTC(2016, 5, 23), 1.0912],[Date.UTC(2016, 5, 24), 1.0693],[Date.UTC(2016, 5, 24), 1.0693],[Date.UTC(2016, 5, 24), 1.0693],[Date.UTC(2016, 5, 27), 1.0541],[Date.UTC(2016, 5, 28), 1.0637],[Date.UTC(2016, 5, 29), 1.0803],[Date.UTC(2016, 5, 30), 1.0891],[Date.UTC(2016, 6, 1), 1.0914],[Date.UTC(2016, 6, 1), 1.0914],[Date.UTC(2016, 6, 1), 1.0914],[Date.UTC(2016, 6, 4), 1.0915],[Date.UTC(2016, 6, 4), 1.0915],[Date.UTC(2016, 6, 4), 1.0915],[Date.UTC(2016, 6, 7), 1.0833],[Date.UTC(2016, 6, 7), 1.0833],[Date.UTC(2016, 6, 7), 1.0833],[Date.UTC(2016, 6, 7), 1.0833],[Date.UTC(2016, 6, 7), 1.0833],[Date.UTC(2016, 6, 7), 1.0833],[Date.UTC(2018, 5, 20), 1.0824],[Date.UTC(2018, 5, 21), 1.0862],[Date.UTC(2018, 5, 22), 1.0887],[Date.UTC(2018, 5, 23), 1.0912],[Date.UTC(2018, 5, 24), 1.0693],[Date.UTC(2018, 5, 24), 1.0693],[Date.UTC(2018, 5, 24), 1.0693],[Date.UTC(2018, 5, 27), 1.0541],[Date.UTC(2018, 5, 28), 1.0637],[Date.UTC(2018, 5, 29), 1.0803],[Date.UTC(2018, 5, 30), 1.0891],[Date.UTC(2018, 6, 1), 1.0914],[Date.UTC(2018, 6, 1), 1.0914],[Date.UTC(2018, 6, 1), 1.0914],[Date.UTC(2018, 6, 4), 1.0915],[Date.UTC(2018, 6, 4), 1.0915],[Date.UTC(2018, 6, 4), 1.0915],[Date.UTC(2018, 6, 7), 1.0833],[Date.UTC(2018, 6, 7), 1.0833],[Date.UTC(2018, 6, 7), 1.0833],[Date.UTC(2018, 6, 7), 1.0833],[Date.UTC(2018, 6, 7), 1.0833],[Date.UTC(2018, 6, 7), 1.0833]]  }  ]       
+              });  
+          });  
+    </SCRIPT>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="col-sm-6 login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="col-sm-6 login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+						  <button class="dl-trigger hidden-sm hidden-md hidden-lg">Open Menu</button>
+                <div class="navigation-arrow"></div>
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="breadcrumb orange">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li>Modelace portfolia</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+     
+      <div class="container">   <!-- hlavní obsah pod slideshow -->
+       <h1>MODELACE PORTFOLIA</h1>  
+       <div class="row">
+         <div class="col-sm-push-9 col-md-push-10 col-lg-push-9 col-sm-3 col-md-2 col-lg-3">
+            <a class="btn btn-blue share-link full-width" href="">Sdílet portfolio</a>
+         </div>
+       </div>
+       
+       
+       <!-- 
+       <div class="row">
+        <div class="col-lg-9 col-md-10">
+          <div class="row">
+            <div class="col-md-7 col-lg-6">
+              <table class="portfolio-info">
+                <tbody>
+                  <tr class="portfolio-info-item">
+                    <td class="portfolio-info-item-label">Vklady:</td>
+                    <td class="portfolio-info-item-value">50 000,00 CZK</td>
+                  </tr>
+                  <tr class="portfolio-info-item">
+                    <td class="portfolio-info-item-label">Celková hodnota portfolia:</td>
+                    <td class="portfolio-info-item-value"><span class="value-text">66 600,00 CZK</span> <span class="smaller-text">(23. 2. 2016)</span></td>
+                  </tr>
+                </tbody>    
+              </table>    
+            </div>
+            <div class="col-md-5 col-lg-6">
+              <table class="portfolio-info">
+                <tbody>
+                  <tr class="portfolio-info-item">
+                    <td class="portfolio-info-item-label">Výnosy celkem:</td>
+                    <td class="portfolio-info-item-value">16 000,00 CZK</td>
+                  </tr>
+                  <tr class="portfolio-info-item">
+                    <td class="portfolio-info-item-label">Výnosy %:</td>
+                    <td class="portfolio-info-item-value">3,32 %</td>
+                  </tr>
+                </tbody>    
+              </table>
+            </div> 
+          </div> 
+        </div> 
+        <div class="col-lg-3 col-md-2">
+          <a class="btn btn-blue full-width mar-top-xs mar-top-sm" href="">Sdílet portfolio</a>
+        </div>
+       </div> 
+
+       <div class="separator"></div> 
+        <div class="separator-empty"></div>
+        
+         -->
+         
+         
+        <div class="row">
+          <div class="col-sm-12"> <!-- taby - prázdné,  nikam nevedou ( = chybí content), jenom pro představu -->
+              <a href="#" class="nav-tabs-dropdown xxs"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->
+              <ul class="tabs-3 nav nav-pills tabs-small-text nav-tabs-wrapper xxs">   <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) --> 
+                 <li class="active">
+                    <div class="tabs-3-tab"> 
+                       <a data-toggle="tab" href="#1a">Pravidelná investice<span class="tabs-3-arrow"></span></a>
+                     </div>  
+                 </li>
+                 <li>
+                    <div class="tabs-3-tab">
+                      <a data-toggle="tab" href="#2a">Jednorázová investice<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                </ul>  <!-- /.tabs-3 -->  
+            </div>
+         </div> 
+        
+        
+        
+          
+        <div class="row">             
+             
+             <div class="col-sm-push-9 col-md-push-9 col-sm-3 col-md-3 mar-bot-25">
+               <div class="form-item">
+               <label for="invest_spolecnost">Měna</label>
+               <div class="select-wrapper">
+                 <select id="invest_spolecnost" class="form-control form-control-select" name="invest_spolecnost">
+                    <option value="jedna_moznost">CZK</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div>
+             </div>
+             
+             <div class="col-sm-pull-3 col-md-pull-3 col-sm-8 col-md-6">
+              <div class="calculator-item blue">
+                    <div class="calculator-item-label">Délka investice</div>
+                    <input id="exampleSliderVal" class="current-label form-control" value="14 let" data-suffix=" let" type="text">
+                    <input id="example" type="text" data-slider-ticks="[1, 30]" data-slider-ticks-snap-bounds="1" data-slider-ticks-labels='["1 rok", "30 let"]' data-slider-tooltip="hide" data-slider-handle="square" data-slider-step="1" />
+                                     
+                    <script type="text/javascript">
+                        $("#example").slider({value: 14});
+                        $("#example").change(function(slideEvt) {
+                      	   var value = $(this).val();
+                           $("#exampleSliderVal").val(value + ' let')
+                         });
+                    </script>  
+                    
+                  </div>
+             </div> 
+                
+          </div>
+          
+          
+      <div class="separator"></div> 
+      
+       <div class="tab-content clearfix">
+      
+        <div class="tab-pane active" id="1a">
+        
+          
+          <h3>Pravidelná měsíční investice</h3>    
+          <table class="fund-table responsive-table portfolio-table modeling">
+                    <thead>
+                      <tr class="table-header"> 
+                        <th class=""></th>
+                        <th class="name"><a href="">Název investičního nástroje / ISIN</a></th>
+                        <th class="alignR"><a href="">Třída&nbsp;aktiv</a></th>
+                        <th class="alignR"><a href="">Pravidelná částka k investování (CZK)</a></th>
+                        <th class="alignR"><a href="">Celkem vloženo (CZK)</a></th>
+                        <th class="alignR"><a href="">Aktuální hodnota (CZK)</a></th>
+                        <th class="alignR"><a href="">Výnos&nbsp;(%)</a></th>
+                        <th class=""></th>
+                        <th class=""></th>
+                      </tr>
+                    </thead>
+                    <tbody>  
+                      <tr class="fund">
+                        <td class="star">
+                          <input id="1" class="form-control form-control-checkbox" name="1" type="checkbox">
+                          <label class="form-label" for="1"><span></span></label>
+                        </td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Aberdeen Global - Eastern European Equity</a></span><span class="name-value">2 000,00 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Fondy kval. investorů</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Pravidelná částka k investování (CZK)</div><div class="table-value">2 000,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Celkem vloženo</div><div class="table-value">21 450,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">24 912,48</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Výnos (%)</div><div class="table-value">3,21</div></td>
+                        <td class="edit hidden-cell"><a href=""><span class="btn-edit">upravit</span></a></td>
+                        <td class="delete hidden-cell"><a href=""><span class="btn-delete">smazat</span></a></td>
+                      </tr>
+                      <tr class="fund">
+                        <td class="star">
+                          <input id="3" class="form-control form-control-checkbox" name="3" type="checkbox">
+                          <label class="form-label" for="3"><span></span></label>
+                        </td>
+                        <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</a></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisový</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Pravidelná částka k investování (CZK)</div><div class="table-value table-value-editable"><input class="editable-input form-control" type="text"><div class="editable-actions"><a class="editable-save glyphicon glyphicon-ok"  href=""><span>Uložit</span></a><a class="editable-cancel glyphicon glyphicon-remove" href=""><span>Zrušit</span></a></div></div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Celkem vloženo CZK)</div><div class="table-value">-</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">-</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Výnos (%)</div><div class="table-value">-</div></td>
+                        <td class="edit hidden-cell"><a href=""><span class="btn-edit">upravit</span></a></td>
+                        <td class="delete hidden-cell"><a href=""><span class="btn-delete">smazat</span></a></td>
+                      </tr>
+                      <tr class="fund">
+                        <td class="star">
+                          <input id="4" class="form-control form-control-checkbox" name="4" type="checkbox">
+                          <label class="form-label" for="4"><span></span></label>
+                        </td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Aberdeen Global - Western European Equity</a></span><span class="name-value">15 578,00 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisový</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Pravidelná částka k investování (CZK)</div><div class="table-value">15 578,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Celkem vloženo CZK)</div><div class="table-value">181 580,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">43 988,48</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Výnos (%)</div><div class="table-value">2,11</div></td>
+                        <td class="edit hidden-cell"><a href=""><span class="btn-edit">upravit</span></a></td>
+                        <td class="delete hidden-cell"><a href=""><span class="btn-delete">smazat</span></a></td>
+                      </tr>
+                      <tr class="new-item">
+                        <td class="hidden-xs hidden-sm"></td>
+                        <td class="new-item-select">
+                          <div class="new-item-search">
+                            <input id="new_item" class="search-field" placeholder="" value="" name="new_item" required="" type="search">    <!-- input s našeptávačem fondů (jméno a/nebo ISIN)) -->   
+                            <label id="new_item-label" class="search-label" for="new_item">
+                              <span class="screen-reader">Hledat</span>
+                            </label>  
+                          </div>                      
+                        </td>
+                        <td><a class="btn btn-blue full-width" href="">Přidat</a></td>
+                        <td class="text-center add-fav" colspan="2"><span class="or-span">nebo</span> <a class="add-btn btn bt-whit" href="">Přidat všechny oblíbené fondy</a></td>
+                      </tr>
+                      <tr class="total">
+                        <td class="hidden-sm hidden-xs"></td>
+                        <td class="sm-xs-title">Celkem</td>
+                        <td class="hidden-sm hidden-xs"></td>
+                        <td class="alignR"><div class="table-label">Pravidelná částka k investování (CZK)</div><div class="table-value">17 578,00</div></td>
+                        <td class="alignR"><div class="table-label">Celkem vloženo CZK)</div><div class="table-value">203 030,00</div></td>
+                        <td class="alignR"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">68 900,96</div></td>
+                      </tr>
+                      
+                    </tbody>  
+                  </table>
+            
+            </div>  <!-- /.tab-pane id="1a" -->
+            
+            <div class="tab-pane" id="2a">
+            
+              <h3>Jednorázová investice</h3>    
+              <table class="fund-table responsive-table portfolio-table modeling">
+                    <thead>
+                      <tr class="table-header"> 
+                        <th class=""></th>
+                        <th class="name"><a href="">Název investičního nástroje / ISIN</a></th>
+                        <th class="alignR"><a href="">Třída&nbsp;aktiv</a></th>
+                        <th class="alignR"><a href="">Jednorázová částka k investování (CZK)</a></th>                        
+                        <th class="alignR"><a href="">Aktuální hodnota (CZK)</a></th>
+                        <th class="alignR"><a href="">Výnos&nbsp;(%)</a></th>
+                        <th class=""></th>
+                        <th class=""></th>
+                      </tr>
+                    </thead>
+                    <tbody>  
+                      <tr class="fund">
+                        <td class="star">
+                          <input id="11" class="form-control form-control-checkbox" name="11" type="checkbox">
+                          <label class="form-label" for="11"><span></span></label>
+                        </td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Aberdeen Global - Eastern European Equity</a></span><span class="name-value">4 200,00 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Fondy kval. investorů</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Jednorázová částka k investování (CZK)</div><div class="table-value">4 200,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">24 912,48</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Výnos (%)</div><div class="table-value">3,21</div></td>
+                        <td class="edit hidden-cell"><a href=""><span class="btn-edit">upravit</span></a></td>
+                        <td class="delete hidden-cell"><a href=""><span class="btn-delete">smazat</span></a></td>
+                      </tr>
+                      <tr class="fund">
+                        <td class="star">
+                          <input id="31" class="form-control form-control-checkbox" name="31" type="checkbox">
+                          <label class="form-label" for="31"><span></span></label>
+                        </td>
+                        <td class="name"><span class="mobile-toggle"></span><a href="">Aberdeen Global - Asian Local Currency Short Duration Bond (EUR)</a></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisový</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Jednorázová částka k investování (CZK)</div><div class="table-value"><span class="bold warning">Zadejte částku</span></div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">-</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Výnos (%)</div><div class="table-value">-</div></td>
+                        <td class="edit hidden-cell"><a href=""><span class="btn-edit">upravit</span></a></td>
+                        <td class="delete hidden-cell"><a href=""><span class="btn-delete">smazat</span></a></td>
+                      </tr>
+                      <tr class="fund">
+                        <td class="star">
+                          <input id="41" class="form-control form-control-checkbox" name="41" type="checkbox">
+                          <label class="form-label" for="41"><span></span></label>
+                        </td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Aberdeen Global - Western European Equity</a></span><span class="name-value">13 378,00 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Třída aktiv</div><div class="table-value">Dluhopisový</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Jednorázová částka k investování (CZK)</div><div class="table-value">13 378,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">43 988,48</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Výnos (%)</div><div class="table-value">2,11</div></td>
+                        <td class="edit hidden-cell"><a href=""><span class="btn-edit">upravit</span></a></td>
+                        <td class="delete hidden-cell"><a href=""><span class="btn-delete">smazat</span></a></td>
+                      </tr>
+                      <tr class="new-item">
+                        <td class="hidden-xs hidden-sm"></td>
+                        <td class="new-item-select">
+                          <div class="new-item-search">
+                            <input id="new_item" class="search-field" placeholder="" value="" name="new_item" required="" type="search">    <!-- input s našeptávačem fondů (jméno a/nebo ISIN)) -->   
+                            <label id="new_item-label" class="search-label" for="new_item">
+                              <span class="screen-reader">Hledat</span>
+                            </label>  
+                          </div>                      
+                        </td>
+                        <td><a class="btn btn-blue full-width" href="">Přidat</a></td>
+                        <td class="text-center add-fav" colspan="2"><span class="or-span">nebo</span> <a class="add-btn btn bt-whit" href="">Přidat všechny oblíbené fondy</a></td>
+                      </tr>
+                      <tr class="total">
+                        <td class="hidden-sm hidden-xs"></td>
+                        <td class="sm-xs-title">Celkem</td>
+                        <td class="hidden-sm hidden-xs"></td>
+                        <td class="alignR"><div class="table-label">Jednorázová částka k investování (CZK)</div><div class="table-value">17 578,00</div></td>
+                        <td class="alignR"><div class="table-label">Aktuální hodnota (CZK)</div><div class="table-value">68 900,96</div></td>
+                      </tr>
+                      
+                    </tbody>  
+                  </table>
+            
+            </div>  <!-- /.tab-pane id="2a" -->
+      
+       </div>  <!-- /.tab-content -->
+       
+       <div class="separator-empty"></div>
+       <div class="separator"></div>
+
+      </div>  <!-- /.container /hlavní obsah pod slideshow -->
+      
+      <div class="container">  
+        <div class="portfolio-body"> 
+          <div class="row">
+             <div class="col-md-4">
+              <div class="portfolio-structure">
+                <h3>Struktura portfolia</h3> 
+                <a href="#" class="nav-tabs-dropdown xxs"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->
+                <ul class="tabs-3 nav nav-pills tabs-smallest-text nav-tabs-wrapper xxs">   <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xxs" říká, že se to přepne na nejmeněším zobrazení (méně jak 350px) -->   
+                
+                <!-- taby jen pro představu, nemají žádný content -->   
+                  <li class="active">
+                    <div class="tabs-3-tab"> 
+                       <a data-toggle="tab" href="#1a">Investiční účet<span class="tabs-3-arrow"></span></a>
+                    </div>  
+                  </li>
+                  <li>
+                      <div class="tabs-3-tab">
+                        <a data-toggle="tab" href="#2a">Investiční nástroje<span class="tabs-3-arrow"></span></a>
+                      </div>
+                  </li>
+                  <li>
+                     <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#3a">Měnové rozložení<span class="tabs-3-arrow"></span></a>
+                     </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#4a">Regionální rozložení<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                 </ul>  <!-- /.tabs-3 --> 
+                 
+                 <div class="donut-graph">
+                    <div class="graphs-graph" id="cphBody_usrModellingPortfolioFunds_usrGraphDonutPortfolio_graphContainer" style="height: 250px;"></div>
+                    <div class="donut-graph-legend">
+                      <div class="donut-graph-legend-row">  
+                        <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#f89728;"></span></div> <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                        <div class="donut-graph-legend-name">
+                          <div class="donut-graph-legend-title">Fondy fondů akciových</div>
+                          <div class="donut-graph-legend-value">20 000 Kč</div>
+                        </div>   
+                      </div>
+                      <div class="donut-graph-legend-row">  
+                        <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#fdc88e;"></span></div> <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                        <div class="donut-graph-legend-name">
+                          <div class="donut-graph-legend-title">Krátkodobé investice</div>
+                          <div class="donut-graph-legend-value">10 000 Kč</div>
+                        </div>   
+                      </div>
+                      <div class="donut-graph-legend-row">  
+                        <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#00395a;"></span></div>  <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                        <div class="donut-graph-legend-name">
+                          <div class="donut-graph-legend-title">Opravdu dlouuuuuhý náááázev položky, který se tam snad ani nevejde</div>
+                          <div class="donut-graph-legend-value">30 000 Kč</div>
+                        </div>   
+                      </div>
+                      <div class="donut-graph-legend-row">  
+                        <div class="donut-graph-legend-symbol"><span class="legend-symbol" style="background-color:#9cbacf;"></span></div>  <!-- ten background-color by se měl dynamicky přebírat z barvy grafu --> 
+                        <div class="donut-graph-legend-name">
+                          <div class="donut-graph-legend-title">Smíšený</div>
+                          <div class="donut-graph-legend-value">40 000 Kč</div>
+                        </div>   
+                      </div>
+                    </div>
+                 </div>
+                 
+                 <!--     // pozůstatek po prvním grafickém náhledu - položky se budou ale generovat přes graf.
+                 <table class="">
+                  <tbody>
+                    <tr>
+                      <td>Nemovitostní fondy</td>
+                      <td class="alignR bold">000,00 CZK</td>
+                    </tr>
+                    <tr>
+                      <td>Dluhopisové fondy</td>
+                      <td class="alignR bold">000,00 CZK</td>
+                    </tr>
+                    <tr>
+                      <td>Akciové fondy</td>
+                      <td class="alignR bold">000,00 CZK</td>
+                    </tr>
+                    <tr>
+                      <td>Peněžní fondy</td>
+                      <td class="alignR bold">000,00 CZK</td>
+                    </tr>
+                    <tr>
+                      <td>Ostatní fondy</td>
+                      <td class="alignR bold">000,00 CZK</td>
+                    </tr>
+                  </tbody>
+                 </table>
+                 --> 
+                 
+                </div> 
+               </div>    
+               
+            <div class="col-md-8">
+              <div class="portfolio-performance">
+                <h3>Výkonnost portfolia</h3> 
+                <ul class="radios">     <!-- přepínání mezi grafen s celkovou výkonností portfolia (1 linka) a jednotlivými výkonnostmi všech fondů v portfoliu (více linek)) --> 
+                      <li>
+                        <input type="radio" id="celkem" name="strategy" value="celkem" checked>
+                        <label for="celkem"><span></span>Fondy celkem</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="jednotlive" name="strategy" value="jednotlive">
+                        <label for="jednotlive"><span></span>Jednotlivé fondy</label>
+                      </li>
+                    </ul>
+                <DIV class="graphs-graph" id="cphBody_usrGraphDetail_graphContainer" style="height: 520px"></DIV>    <!-- v tomto případě se zobrazuje pouze celkový výkonnost všech fondů v portfoliu - pro jednotlivé fondy je model na stránce "modelace-portfolia2.html" --> 
+                <div class="more-link-div download">
+                           <a href="">Export do XLS</a>
+                        </div>
+              </div>  
+            </div> 
+                  
+            </div> 
+        </div>  
+        
+        
+        
+          
+      </div>  <!-- /.contianer -->
+      
+      
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>

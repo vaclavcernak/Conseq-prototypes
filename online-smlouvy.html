@@ -1,0 +1,845 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq - Online smlouvy</title>
+  </head>
+  <body class="online-smlouvy">
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq logged-in">  <!-- mobilní zobrazení pro přilhášeného uživatele -->
+                      <h3>Můj CONSEQ</h3>
+                      <div class="login-username">
+                        <a href="">Václav Hájek</a>
+                      </div>
+                      <div class="login-actions">
+                        <ul>
+                          <li><a class="login-settings" href="">Nastavení</a></li>
+                          <li><a class="login-logout" href="">Odhlásit</a></li>
+                        </ul>  
+                      </div>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">    
+        <div class="user-logged-in hidden-xs">
+          <span><a href="">Václav Hájek</a></span> / <span><a href="">Nastavení</a></span> / <span><a href="">Odhlásit</a></span>
+        </div>    
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main tab-content">  <!-- "tab-content" je div pro zabalení contentu všech tabů--> 
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li><a href="">Můj CONSEQ</a><span class="divider">/</span></li>
+              <li>Online smlouvy</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+     
+      <div class="container">
+        <div class="back-link"><a href="">&lsaquo; Zpět na hlavní panel</a></div> 
+        <h1>Online smlouvy</h1>
+        
+        <a href="#" class="nav-tabs-dropdown xs sticky"></a>  <!-- tlačítko pro změnu z tabů do dropdown selectu při přechodu na mobilní zobrazení ; classa "xs" říká, že se to přepne na mobilním zobrazení (méně jak 768px) -->
+                <ul class="tabs-3 nav nav-pills tabs-smallest-text nav-tabs-wrapper xs sticky">   <!-- classu "nav-tabs-wrapper" - použít pokud chceme, aby se v mobilním zobrazení zobrazil dropdown select místo tabů ; classa "xs" říká, že se to přepne na mobilním zobrazení (méně jak 768px) -->   
+                
+                <!-- taby jen pro představu, nemají žádný content -->   
+                  <li class="active">
+                    <div class="tabs-3-tab"> 
+                       <a data-toggle="tab" href="#1a">Osobní údaje<span class="tabs-3-arrow"></span></a>
+                    </div>  
+                  </li>
+                  <li>
+                      <div class="tabs-3-tab">
+                        <a data-toggle="tab" href="#2a">Produkt<span class="tabs-3-arrow"></span></a>
+                      </div>
+                  </li>
+                  <li>
+                     <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#3a">Jednorázový pokyn<span class="tabs-3-arrow"></span></a>
+                     </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#4a">Trvalý pokyn<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#4a">AML dotazník<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#5a">Investiční dotazník<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#6a">Obchodní zástupce<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#7a">Kontrolní přehled<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="tabs-3-tab">
+                       <a data-toggle="tab" href="#8a">Smlouva<span class="tabs-3-arrow"></span></a>
+                    </div>
+                  </li>
+                </ul>  <!-- /.tabs-3 --> 
+            </div> 
+            <div class="container">
+              <div class="alert alert-danger">Chybová hláška</div> 
+            </div> 
+          
+          
+      			  <div class="tab-pane active" id="1a">
+              <div class="separator-empty"></div> 
+              <div class="container">
+              <span class="radio-label">Klient</span>  
+              <ul class="radios">
+                <!--
+                <li>
+                  <input id="fyz_osoba" name="klient" value="fyz_osoba" checked="" type="radio">
+                  <label class="width-smlouva" for="fyz_osoba"><span></span>Fyzická osoba</label>
+                </li>
+               -->  
+                <li>
+                  <span class="width-smlouva radio-type" type="radio">
+                    <input id="fyz_osoba" type="radio" name="klient" value="fyz_osoba" checked="" />
+                    <label for="fyz_osoba">Fyzická osoba</label>
+                  </span>
+                </li>
+                <li>
+                  <span class="width-smlouva radio-type" type="radio">
+                   <input id="pravnicka_osoba" name="klient" value="pravnicka_osoba" type="radio">
+                   <label class="width-smlouva" for="pravnicka_osoba">Právnická osoba</label>
+                  </span> 
+                </li>
+              </ul>
+                      
+              <div class="separator"></div> 
+              <h3>FYZICKÁ OSOBA</h3>
+              <div class="separator-empty"></div> 
+              <span class="radio-label">Pohlaví</span>  
+              <ul class="radios">
+                <li>
+                  <span class="width-smlouva radio-type" type="radio">
+                    <input id="muz" name="pohlavi" value="muz" checked="" type="radio">
+                    <label class="" for="muz">Muž</label>
+                  </span>  
+                </li>
+                <li>
+                   <span class="width-smlouva radio-type" type="radio">
+                     <input id="zena" name="pohlavi" value="zena" type="radio">
+                     <label for="zena">Žena</label>
+                   </span> 
+                </li>
+              </ul>
+              
+              <div class="row">   
+                   
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="jmeno">Titul</label>
+                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Nápověda"></a>
+                <input id="titul" class="form-control" name="titul" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-xs-6 col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="titul_za">TItul za</label>
+                <input id="titul_za" class="form-control" name="titul_za" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="jmeno">Jméno *</label>
+                <input id="jmeno" class="form-control" name="jmeno" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="prijmeni">Příjmení *</label>
+                <input id="prijmeni" class="form-control" name="prijmeni" type="text">
+              </div>   
+            </div>
+                    
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="rc">Rodné číslo *</label>
+                <input id="rc" class="form-control" name="rc" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="datum_narozeni">Datum narození *</label>
+                <input id="datum_narozeni" class="form-control" name="datum_narozeni" type="text">
+              </div>   
+            </div>     
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="misto_narozeni">Místo narození</label>
+                <input id="misto_narozeni" class="form-control" name="misto_narozeni" type="text">
+              </div>   
+            </div>  
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="statni_prislusnost">Státní příslušnost</label>
+                <input id="statni_prislusnost" class="form-control" name="statni_prislusnost" type="text">
+              </div>   
+            </div>    
+                    
+          </div> 
+          
+           <div class="separator"></div> 
+           
+           <h3>TRVALÁ ADRESA</h3>
+           <div class="separator-empty"></div>    
+            <div class="row">   
+                   
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="ulice">Ulice *</label>
+                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Nápověda"></a>
+                <input id="ulice" class="form-control" name="ulice" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="mesto">Město *</label>
+                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Nápověda"></a>
+                <input id="mesto" class="form-control" name="mesto" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="psc">PSČ *</label>
+                <input id="psc" class="form-control" name="psc" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+               <label for="stat">Stát</label>
+               <div class="select-wrapper">
+                 <select id="stat" class="form-control form-control-select" name="stat">
+                    <option value="jedna_moznost">Vyberte</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div>
+            </div>
+                    
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+              
+                <label for="americka_osoba">Americká osoba</label>
+                <ul class="radios mar-top-10">
+                <li>
+                  <span class="radio-type" type="radio">
+                    <input id="ano" name="americka_osoba" value="ano" checked="" type="radio">
+                    <label for="ano">Ano</label>
+                    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Nápověda"></a>
+                  </span>   
+                </li>
+                <li>
+                  <span class="radio-type" type="radio">
+                     <input id="ne" name="americka_osoba" value="ne" type="radio">
+                     <label for="ne">Ne</label>
+                     <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Nápověda"></a>
+                   </span>   
+                </li>
+              </ul>
+              </div>   
+            </div>
+            
+    
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+               <label for="staty">Státy daňové rezidence</label>
+               <div class="select-wrapper">
+                 <select id="stat" class="form-control form-control-select" name="staty">
+                    <option value="jedna_moznost">Vyberte</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div>
+            </div>     
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="email">E-mail *</label>
+                <input id="email" class="form-control" name="email" type="email">
+              </div>   
+            </div>  
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="telefon">Telefon</label>
+                <input id="telefon" class="form-control" name="telefon" type="tel">
+              </div>   
+            </div>    
+                    
+          </div> 
+          
+          <div class="form-item">
+                <div class="checkbox-radio checkbox-radio-big">
+                  <input id="favourite_only" class="form-control form-control-checkbox" name="favourite_only" type="checkbox">
+                  <label class="form-label" for="favourite_only"><span></span>Korespondenční adresa je shodná s trvalou adresou / sídlem
+                  <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom" title="Nápověda"></a>  </label>
+                </div>
+              </div> 
+              
+         <div class="form-item">
+          <div class="checkbox-type">
+            <input id="1" type="checkbox" />
+            <span class="form-label" for="1">Korespondenční adresa je shodná s trvalou adresou / sídlem</span>
+          </div>  
+        </div>     
+         
+         <div class="separator"></div>   
+                      
+         <div class="row">   
+                   
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="ulice">Ulice</label>
+                <input id="ulice" class="form-control" name="ulice" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="mesto">Město</label>
+                <input id="mesto" class="form-control" name="mesto" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="psc">PSČ</label>
+                <input id="psc" class="form-control" name="psc" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+               <label for="stat">Stát</label>
+               <div class="select-wrapper">
+                 <select id="stat" class="form-control form-control-select" name="stat">
+                    <option value="jedna_moznost">Vyberte</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div>
+            </div>             
+         
+         </div>             
+          </div>
+          
+         <div class="bg-blue">
+                  <div class="container">
+                  <div class="separator-empty"></div>
+                  <h3>ZÁSTUPCE PRÁVNICKÉ OSOBY / ZÁKONNÝ ZÁSTUPCE NEZLETILÉHO KLIENTA</h3>
+                  <div class="row">   
+                   
+                  <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="form-item">
+                      <label for="ulice">TItul</label>
+                      <input id="ulice" class="form-control" name="ulice" type="text">
+                    </div>   
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="form-item">
+                      <label for="mesto">Titul za</label>
+                      <input id="mesto" class="form-control" name="mesto" type="text">
+                    </div>   
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-item">
+                      <label for="psc">Jméno</label>
+                      <input id="psc" class="form-control" name="psc" type="text">
+                    </div>   
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-item">
+                      <label for="psc">Příjmení</label>
+                      <input id="psc" class="form-control" name="psc" type="text">
+                    </div>   
+                  </div>
+                  
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-item">
+                      <label for="psc">Rodné číslo</label>
+                      <input id="psc" class="form-control" name="psc" type="text">
+                    </div>   
+                  </div>        
+               
+               </div>  
+              <div class="separator"></div> 
+              
+              <h3>TRVALÉ BYDLIŠTĚ</h3>
+              <div class="row">   
+                   
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="ulice">Ulice</label>
+                <input id="ulice" class="form-control" name="ulice" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="mesto">Město</label>
+                <input id="mesto" class="form-control" name="mesto" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="psc">PSČ</label>
+                <input id="psc" class="form-control" name="psc" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+               <label for="stat">Stát</label>
+               <div class="select-wrapper">
+                 <select id="stat" class="form-control form-control-select" name="stat">
+                    <option value="jedna_moznost">Vyberte</option>
+                    <option value="druha_moznost">Druhá možnost</option>
+                    <option value="treti_moznost">Třetí možnost</option>
+                    <option value="ctvrta_moznost">Čtvrtá možnost</option>
+                 </select> 
+               </div>
+              </div>
+            </div>      
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="psc">E-mail</label>
+                <input id="psc" class="form-control" name="psc" type="email">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="psc">Telefon</label>
+                <input id="psc" class="form-control" name="psc" type="text">
+              </div>   
+            </div>       
+         
+         </div>   
+         <div class="separator-empty"></div> 
+               
+               
+       </div>  <!-- /.container --> 
+      </div>   <!-- /.bg-blue --> 
+      
+      <div class="separator-empty"></div>    
+      
+      <div class="container"> 
+        <h3>BANKOVNÍ SPOJENÍ</h3>
+        
+        <div class="separator-empty"></div>  
+        <ul class="radios">
+           <li>
+            <span class="radio-type" type="radio">
+              <input id="" name="" value="" checked="" type="radio">
+              <label for="">Číslo účtu</label>
+            </span>
+           </li>
+           <li>
+             <span class="radio-type" type="radio">
+              <input id="" name="" value="" type="radio">
+              <label for="">IBAN</label>
+             </span>
+           </li>
+        </ul>
+        
+        <div class="row">   
+                   
+            <div class="col-xs-4 col-sm-2 col-md-3">
+              <div class="form-item">
+                <label for="">Předčíslí</label>
+                <input id="" class="form-control" name="" type="text">
+              </div> 
+              <span class="bank-account-number">-</span>  
+            </div>
+            
+            <div class="col-xs-8 col-sm-5 col-md-3">
+              <div class="form-item">
+                <label for="">Číslo účtu</label>
+                <input id="" class="form-control" name="" type="text">
+              </div>   
+              <span class="bank-account-number hidden-xs">/</span> 
+            </div>
+            
+            <div class="col-sm-5 col-md-3">
+              <div class="form-item">
+                <label for="">Kód banky</label>
+                <input id="" class="form-control" name="" type="text">
+              </div>   
+            </div>
+        
+        </div>
+        
+        <div class="separator"></div> 
+        
+        <h3>PRŮKAZ TOTOŽNOSTI IDENTIFIKOVANÉ OSOBY</h3>
+        
+        <div class="separator-empty"></div>  
+          <span class="radio-label">Identifikovaná osoba</span>  
+              <ul class="radios">
+                <li>
+                  <span class="radio-type width-smlouva" type="radio">
+                    <input id="" name="" value="" checked="" type="radio">
+                    <label for="">Klient</label>
+                  </span>
+                </li>
+                <li>
+                  <span class="radio-type width-smlouva" type="radio">
+                     <input id="" name="" value="" type="radio">
+                     <label for="">Zástupce klienta</label>
+                   </span>
+                </li>
+              </ul>
+            <div class="separator-empty"></div>      
+            <span class="radio-label">Typ</span>  
+              <ul class="radios">
+                <li>
+                  <span class="radio-type width-smlouva" type="radio">
+                    <input id="" name="" value="" checked="" type="radio">
+                    <label for="">OP</label>
+                  </span>
+                </li>
+                <li>
+                  <span class="radio-type width-smlouva" type="radio">
+                    <input id="" name="" value="" type="radio">
+                    <label for="">PAS</label>
+                  </span>
+                </li>
+              </ul>
+              
+           <div class="separator-empty"></div>    
+           
+           <div class="row">   
+                   
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="">Číslo</label>
+                <input id="" class="form-control" name="" type="text">
+              </div> 
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="">Platný do</label>
+                <input id="" class="form-control" name="" type="text">
+              </div>   
+            </div>
+            
+            <div class="col-sm-6 col-md-3">
+              <div class="form-item">
+                <label for="">Vydal</label>
+                <input id="" class="form-control" name="" type="text">
+              </div>   
+            </div>
+        
+         </div>    
+        
+        <div class="separator"></div>   
+        
+        <p>*<em><small> Takto označené položky jsou povinné údaje. Pečlivě je vyplňte prosím.</small></em></p>
+        
+         <div class="row">   
+                   
+            <div class="col-sm-3">
+              <a class="btn btn-blue full-width" href="">Další ›</a>
+            </div>
+        
+         </div>  
+        
+      </div>  <!-- /.container -->          
+          
+                      
+    </div>  <!-- / konec obsahu prvniho tabu --> 
+              
+   <div class="tab-pane" id="2a">
+     <div class="container">
+       <p>Sed feugiat sapien pharetra venenatis cursus. Pellentesque maximus justo non tincidunt posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus mollis nibh, non ornare purus condimentum non. Etiam fermentum posuere enim dictum molestie. Aliquam erat volutpat.</p>
+    	</div>
+   </div>
+              
+  <div class="tab-pane" id="3a">
+    <div class="container">
+      <h3>JEDNORÁZOVÝ POKYN K NÁKUPU</h3>
+      <div class="separator-empty"></div>
+      <h4>Volba fondu</h4>
+      <table class="fund-table responsive-table portfolio-table online-contract">
+                    <thead>
+                      <tr class="table-header"> 
+                        <th class="text-center">Číslo</th>
+                        <th class="name"><a href="">Název</a></th>
+                        <th class="alignR"><a href="">ISIN</a></th>
+                        <th class="alignR"><a href="">Hrubá částka k investování</a></th>
+                        <th class="alignR"><a href="">Měna</a></th>
+                        <th class="alignR"><a href="">Sazba vstupních poplatků</a></th>
+                        <th class="alignR">Akce</th>
+                      </tr>
+                    </thead>
+                    <tbody>  
+                      <tr class="fund">
+                        <td class="text-center hidden-xs hidden-sm">1</td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Aberdeen Global Asia Pacific Equity Fund</a></span><span class="name-value">100 000 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Hrubá částka k investování</div><div class="table-value">100 000</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Sazba vstupních poplatků</div><div class="table-value">5,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Akce</div><div class="table-value"><a href="">editovat</a>&nbsp;<a href="">smazat</a></div></td>
+
+                      </tr>
+                      <tr class="fund">
+                        <td class="text-center hidden-xs hidden-sm">2</td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Český fond Půdy Class A (CZK) Dis</a></span><span class="name-value">10 000 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Hrubá částka k investování</div><div class="table-value">10 000</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Sazba vstupních poplatků</div><div class="table-value">0</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Akce</div><div class="table-value"><a href="">editovat</a>&nbsp;<a href="">smazat</a></div></td>
+                      </tr>
+                      <tr class="fund">
+                        <td class="text-center hidden-xs hidden-sm">3</td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Conseq Invest Dluhopisový - Třída D</a></span><span class="name-value">10 000 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Hrubá částka k investování</div><div class="table-value">10 000</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Sazba vstupních poplatků</div><div class="table-value">2,50</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Akce</div><div class="table-value"><a href="">editovat</a>&nbsp;<a href="">smazat</a></div></td>
+                      </tr>
+                      <tr class="fund">
+                        <td class="text-center hidden-xs hidden-sm">4</td>
+                        <td class="name"><span class="mobile-toggle"></span><span class="name-label"><a href="">Active Invest Progressive (EUR)</a></span><span class="name-value">100 000 CZK</span></td>
+                        <td class="alignR hidden-cell"><div class="table-label">ISIN</div><div class="table-value">LU0566486402</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Hrubá částka k investování</div><div class="table-value">100 000</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Měna</div><div class="table-value">CZK</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Sazba vstupních poplatků</div><div class="table-value">5,00</div></td>
+                        <td class="alignR hidden-cell"><div class="table-label">Akce</div><div class="table-value"><a href="">editovat</a>&nbsp;<a href="">smazat</a></div></td>
+                      </tr>
+                      <tr class="new-item">
+                        <td class="text-center hidden-xs hidden-sm">5</td>
+                        <td class="new-item-select">
+                          <div class="new-item-search">
+                            <input id="new_item" class="search-field" placeholder="Zadejte název fondu nebo ISIN" value="" name="new_item" required="" type="search">    <!-- input s našeptávačem fondů (jméno a/nebo ISIN)) -->   
+                            <label id="new_item-label" class="search-label" for="new_item">
+                              <span class="screen-reader">Hledat</span>
+                            </label>  
+                          </div>                      
+                        </td>
+                        <td class="hidden-cell"></td>
+                        <td class="alignR amount-input"><input id="" class="form-control text-right" name="" placeholder="Zadejte částku" type="text"></td>
+                        <td class="hidden-cell"></td>
+                        <td class="hidden-cell"></td>
+                        <td class="alignR add-fund"><a href=""><span class="add-fund-link">přidat</span></a></td>
+                      </tr>
+                      
+                      
+                    </tbody>  
+                  </table>
+        <div class="separator-empty"></div>
+        <div class="row">   
+                   
+            <div class="col-sm-3 col-md-3 col-lg-2">
+              <div class="summary-item"><span class="summary-label">Počet pokynů celkem:<span> <span class="summary-value">4</span></div> 
+            </div>
+            <div class="col-sm-3 col-md-5 col-lg-4">
+              <div class="summary-item"><span class="summary-label">Hrubá částka k investování celkem:</span> <span class="summary-value">220 000 CZK</span></div> 
+            </div>
+            <div class="col-sm-3 col-md-2 col-lg-3">
+              <div class="summary-item"><span class="summary-label">Sleva na poplatku:</span> <span class="summary-value">0%</span></div> 
+            </div>
+             <div class="col-sm-3 col-md-2 col-lg-3">
+              <a class="btn btn-blue full-width" href="">Přepočítat</a>
+            </div>
+        
+         </div> 
+        <div class="separator-empty"></div>
+        <div class="separator"></div>
+
+        <div class="row">   
+                   
+            <div class="col-sm-3">
+              <a class="btn btn-blue full-width" href="">Další ›</a>
+            </div>
+        
+         </div> 
+         
+         
+    </div>
+  </div>
+              
+  </div>  <!-- /.main .tab-content -->    
+
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>

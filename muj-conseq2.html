@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq Můj Conseq - Osobní údaje 2</title>
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+        <div class="user-logged-in hidden-xs">
+          <span><a href="">Václav Hájek</a></span> / <span><a href="">Nastavení</a></span> / <span><a href="">Odhlásit</a></span>
+        </div> 
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main tab-content">  <!-- "tab-content" je div pro zabalení conentu všech tabů--> 
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li><a href="">Homepage</a><span class="divider">/</span></li>
+              <li>Můj Conseq</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+     
+      <div class="container">
+        <h1>MŮJ CONSEQ</h1>
+        <div class="row contract-page">  <!-- .contract-page je pro tuto specifickou část - upravuje se díky ní v CSS velikost a upprecase nadpisů (h3) -->
+        
+          <div class="col-md-6">
+            <h3>Přehled klientů</h3>
+            <div class="bg-dark">
+            <div class="bg-dark-mobile"></div>  <!-- nutné kvůli pozadí na mobilu -->
+              <div class="half-divided">
+                <div class="row">
+                
+                  <div class="col-sm-6 col-sm-push-6">
+                    <div class="client-right">
+                      <div class="client-info2">Aktuální počet klientů <br><span class="client-value-big">58</span></div>
+                      <div class="client-info2">Aktuální hodnota všech klientů celkem <br><span class="client-value-big">315 150 019 128,80</span> <span class="client-value-currency">&nbsp;CZK</span></div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6 col-sm-pull-6">
+                    <div class="client-left">
+                      <div class="client">
+                        <div class="client-name"><a href="">Veronika Šamárková</a></div>
+                        <div class="client-info">Aktuální hodnota investice <span class="client-value">870,39 CZK</span></div>
+                        <div class="client-info">Počet účtů <span class="client-value">1</span></div>
+                        <div class="client-info">Datum posledního pohybu <span class="client-value">21.08.2016</span></div>
+                      </div>
+                      <div class="client">
+                        <div class="client-name"><a href="">Pavel Žára</a></div>
+                        <div class="client-info">Aktuální hodnota investice <span class="client-value">759,392 CZK</span></div>
+                        <div class="client-info">Počet účtů <span class="client-value">1</span></div>
+                        <div class="client-info">Datum posledního pohybu <span class="client-value">08.08.2016</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>   
+               <div class="row">
+               <div class="col-sm-12">
+                  <div class="mc-more-link"><a href="">Přehled všech klientů / 58</a></div>  
+               </div>
+               </div>
+            </div>
+            
+            
+            
+          </div> 
+          
+          <div class="col-md-6">
+            <h3>Aktuality</h3>
+            <div class="div-border">
+              <div class="news-item">
+                <div class="news-item-image"><a href=""><img src="images/news-1.jpg" alt="novinka-1"></a></div>
+                <div class="news-item-title"><h4><a href="">Americké akce patří k nejdražším na světě</a></h4></div>
+                <div class="news-item-body">Americký index s&P opět dosáhl svého maxima, když pokořil hranici 2130 bodů, kterou nastavil loni v květnu, a atakoval i hodnotu 2140 bodů. Ve světle Brexitu a blížících se prezidentských voleb se jedná Accum inctibus, quate sam, conemol uptaeped es experup tatisti rerunt pratibus.</div>
+              </div>
+              <div class="news-item">
+                <div class="news-item-image"><a href=""><img src="images/news-2.jpg" alt="novinka-2"></a></div>
+                <div class="news-item-title"><h4><a href="">Nem voluptur amenis evenis aut</a></h4></div>
+                <div class="news-item-body">Americký index s&P opět dosáhl svého maxima, když pokořil hranici 2130 bodů, kterou nastavil loni v květnu, a atakoval i hodnotu 2140 bodů. Ve světle Brexitu a blížících se prezidentských voleb se jedná Accum inctibus, quate sam, conemol uptaeped es experup tatisti rerunt pratibus.</div>
+              </div>
+              <div class="mc-more-link"><a href="">Více aktualit / 25</a></div> 
+            </div>
+          </div>
+          
+        </div> 
+        
+        <div class="row contract-page">  <!-- .contract-page je pro tuto specifickou část - upravuje se díky ní v CSS velikost a uppeecase nadpisů (h3) -->
+        
+          <div class="col-sm-6 col-md-3">
+            <h3>Rozpracované návrhy smluv</h3>
+            <div class="div-border">
+                <div class="contract">
+                  <div class="client-name"><a href="">David Strach</a></div>
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889453</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="contract">
+                  <div class="client-name"><a href="">Emil Kalkbrenner</a></div>
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889454</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="mc-more-link"><a href="">Přehled všech rozpracovaných smluv / 3</a></div> 
+             </div>       
+          </div> 
+          
+          <div class="col-sm-6 col-md-3">
+            <h3>Návrhy smluv v prodlení</h3>
+            <div class="div-border">
+                <div class="contract">
+                  <div class="client-name"><a href="">Josef Mastný</a></div>
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889453</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="contract">
+                  <div class="client-name"><a href="">Ludmila Vokatá</a></div>
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889454</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="mc-more-link"><a href="">Přehled všech smluv v prodlení / 4</a></div> 
+             </div>   
+          </div>
+          
+          <div class="col-sm-6 col-md-3">
+            <h3>Ohrožené smlouvy</h3>
+            <div class="div-border">
+                <div class="contract">
+                  <div class="client-name danger-icon"><a href="">Josef Mastný</a></div>  <!-- ".danger-icon" kvůli jiné ikonce vedle jména -->
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889453</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="contract">
+                  <div class="client-name danger-icon"><a href="">Ludmila Vokatá</a></div>  <!-- ".danger-icon" kvůli jiné ikonce vedle jména -->
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889454</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="mc-more-link"><a href="">Přehled všech ohrožených smluv / 12</a></div> 
+             </div> 
+          </div> 
+          
+          <div class="col-sm-6 col-md-3">
+            <h3>Smlouvy v intervenci</h3>
+            <div class="div-border">
+                <div class="contract">
+                  <div class="client-name orange-icon"><a href="">Deutch Jindřich</a></div>  <!-- ".orange-icon" kvůli jiné ikonce vedle jména -->
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889453</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="contract">
+                  <div class="client-name orange-icon"><a href="">František Armani</a></div>  <!-- ".orange-icon" kvůli jiné ikonce vedle jména -->
+                  <div class="client-info">Číslo smlouvy <span class="client-value">9602889454</span></div>
+                  <div class="client-info">Produkt <span class="client-value">Horizont Invest</span></div>
+                  <div class="client-info">Datum <span class="client-value">31.05.2016</span></div>
+                </div>
+                <div class="mc-more-link"><a href="">Přehled všech smluv v intervenci / 2</a></div> 
+             </div> 
+          </div>
+          
+        </div> 
+
+      </div>  <!-- /.container /hlavní obsah pod slideshow -->  
+         
+
+      
+      
+      
+      
+    
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>

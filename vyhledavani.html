@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <link rel="stylesheet" type="text/css" href="css/paginator-net.css"> 
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/highstock.js"></script>
+    <script src="js/highcharts_lang.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <title>Conseq Vyhledávání</title>
+  </head>
+  <body>
+    <header>
+      <div class="container containerHp">
+        <div class="top">
+          <div class="top-logo">
+            <a href="/"><img class="top-logo-image" src="images/logo.png" alt="logo" title="Domů" /></a>
+          </div>
+          <div class="top-right">
+            <div class="top-right-login">
+              <a id="login-btn" class="btn btn-orange"><i class="icon icon-login"></i><span>Přihlášení</span></a>
+              <div class="login-popupC">
+              <div class="login-popup-arrow"></div>
+                <div class="login-popup">
+                  <div class="row">  
+                    <div class="login-my-conseq"> 
+                      <h3>Můj CONSEQ</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                    <div class="login-conseq-online"> 
+                      <h3>CONSEQ online</h3>
+                      <p>Cum socilis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. In enim a arcu imperdiet malesucada. Nullam eqet nisl.</p>
+                      <input class="username" placeholder="Uživatelské jméno" value="" name="">
+                      <input class="password" type="password" placeholder="Heslo" value="" name="">
+                      <a class="btn btn-orange" href="">Vstoupit &rsaquo;</a>
+                      <a class="lost-password" href="">Zapomněli jste heslo?</a>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-search">     
+              <div id="search-btn"><i class="icon icon-search"></i></div> 
+              <div class="top-right-search-inputC">   
+              <div class="search-popup-arrow"></div>       
+                <div class="top-right-search-input">   
+                  <input id="q" class="search-field" type="search" placeholder="" value="" name="" required="">
+                  <label id="search-label" for="q">
+                  <span class="screen-reader">Hledat</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="top-right-language">
+                <a class="active" href="">CZ</a> / <a href="">EN</a>
+            </div>
+          </div>
+        </div>
+      
+      
+     
+        <nav class="navigation">     
+          
+            <div class="row">
+              <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu navbar-nav menu-level1">
+                  <li class="menu-level1-li"><a href="#">Penze</a></li>
+                  <li class="menu-level1-li"><a href="#">Spoření</a></li>
+                  <li class="menu-level1-li"><a href="#">Investice</a></li>
+                  <li class="menu-level1-li"><a href="#">Wealth management</a></li>
+                </ul>
+              </div> <!-- /dl-menuwrapper -->
+            </div>
+            
+        </nav>
+      </div>
+    </header>  <!-- /header section -->
+
+    <div class="main">   
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="rcrumbs">
+            <ul>
+              <li><a href="">CONSEQ</a><span class="divider">/</span></li>
+              <li>Vyhledávání</li>
+            </ul>
+          </div>    
+        </div>
+      </div>   <!-- /.breadcrumb -->
+     
+       
+       <div class="container">
+         <h1>VYHLEDÁVÁNÍ</h1>
+       </div>
+         
+       <div class="bg-blue search-page">
+       <div class="container">         
+          <div class="search-page-input">   
+              <input id="search" class="search-field" type="search" placeholder="" value="" name="" required="">
+              <label id="search-label" for="search">
+                <span class="screen-reader">Hledat</span>
+              </label>
+          </div>
+        </div>
+
+        <div class="container search-page-filter">  
+        
+          <div class="row hidden" id="detailed-search">
+                <div class="col-sm-6 col-md-3">
+                  <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                      <input id="1" class="form-control form-control-checkbox" name="1" type="checkbox">
+                      <label class="form-label" for="1"><span></span>Vše</label>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                      <input id="2" class="form-control form-control-checkbox" name="2" type="checkbox">
+                      <label class="form-label" for="2"><span></span>Fondy a dluhopisy</label>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                      <input id="3" class="form-control form-control-checkbox" name="3" type="checkbox">
+                      <label class="form-label" for="3"><span></span>Novinky</label>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                      <input id="4" class="form-control form-control-checkbox" name="4" type="checkbox">
+                      <label class="form-label" for="4"><span></span>Dokumenty</label>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                      <input id="5" class="form-control form-control-checkbox" name="5" type="checkbox">
+                      <label class="form-label" for="5"><span></span>FAQ</label>
+                    </div>
+                  </div>  
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="form-item">
+                    <div class="checkbox-radio checkbox-radio-big">
+                      <input id="6" class="form-control form-control-checkbox" name="6" type="checkbox">
+                      <label class="form-label" for="6"><span></span>Stránky</label>
+                    </div>
+                  </div>  
+                </div>    
+              </div>
+        
+          <div class="row" >
+            <div class="col-sm-6 col-md-9">  
+            <a class="detailed-search-link" href="javascript:void(null)" onclick="toggler('detailed-search');">Zobrazit rozšířený filtr</a> <!-- Po kliknutí by se měl měnit název: Zobrazit rozšířený filtr / Skrýt rozšířený filtr -->  
+             
+              
+              
+           </div> 
+                                         
+           <div class="col-sm-6 col-md-3">
+             <a class="btn btn-blue full-width" href="">Vyhledat</a>
+           </div>
+        </div>   
+          
+        </div> 
+      </div>  <!-- /.bg-blue -->
+      
+      <div class="container">
+       <div class="search-result-items">
+        <div class="search-result-item">
+          <div class="search-result-item-title"><h3>O spoření</h3></div>
+          <div class="search-result-item-link">
+            <a href="">https://www.conseq.cz/page.asp?page=177</a>
+          </div>
+          <div class="search-result-item-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula, ligula porttitor tincidunt elementum, arcu ex sollicitudin sem, non cursus ante massa hendrerit est. Nunc volutpat, nunc non varius interdum, sem est semper urna, quis mollis diam nisi vitae elit. Quisque ligula massa, tincidunt at ultrices eget, ullamcorper nec sapien. Vivamus ut libero scelerisque sapien condimentum blandit. In mi felis, sollicitudin ac pulvinar eget, placerat sit amet ex. Donec non justo vel enim hendrerit eleifend. Sed nec hendrerit turpis. Sed porttitor erat augue, porta posuere lorem aliquam a.</p>
+          </div>
+        </div>
+        
+        <div class="search-result-item">
+          <div class="search-result-item-title"><h3>Základní informace o spoření</h3></div>
+          <div class="search-result-item-link">
+            <a href="">https://www.conseq.cz/page.asp?page=177</a>
+          </div>
+          <div class="search-result-item-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula, ligula porttitor tincidunt elementum, arcu ex sollicitudin sem, non cursus ante massa hendrerit est. Nunc volutpat, nunc non varius interdum, sem est semper urna, quis mollis diam nisi vitae elit. Quisque ligula massa, tincidunt at ultrices eget, ullamcorper nec sapien. Vivamus ut libero scelerisque sapien condimentum blandit. In mi felis, sollicitudin ac pulvinar eget, placerat sit amet ex. Donec non justo vel enim hendrerit eleifend. Sed nec hendrerit turpis. Sed porttitor erat augue, porta posuere lorem aliquam a.</p>
+          </div>
+        </div>
+        
+        <div class="search-result-item">
+          <div class="search-result-item-title"><h3>Růstový účastnický fond</h3></div>
+          <div class="search-result-item-link">
+            <a href="">https://www.conseq.cz/page.asp?page=177</a>
+          </div>
+          <div class="search-result-item-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula, ligula porttitor tincidunt elementum, arcu ex sollicitudin sem, non cursus ante massa hendrerit est. Nunc volutpat, nunc non varius interdum, sem est semper urna, quis mollis diam nisi vitae elit. Quisque ligula massa, tincidunt at ultrices eget, ullamcorper nec sapien. Vivamus ut libero scelerisque sapien condimentum blandit. In mi felis, sollicitudin ac pulvinar eget, placerat sit amet ex. Donec non justo vel enim hendrerit eleifend. Sed nec hendrerit turpis. Sed porttitor erat augue, porta posuere lorem aliquam a.</p>
+          </div>
+        </div>
+        
+        <div class="search-result-item">
+          <div class="search-result-item-title"><h3>Spořící účastnický fond</h3></div>
+          <div class="search-result-item-link">
+            <a href="">https://www.conseq.cz/page.asp?page=177</a>
+          </div>
+          <div class="search-result-item-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula, ligula porttitor tincidunt elementum, arcu ex sollicitudin sem, non cursus ante massa hendrerit est. Nunc volutpat, nunc non varius interdum, sem est semper urna, quis mollis diam nisi vitae elit. Quisque ligula massa, tincidunt at ultrices eget, ullamcorper nec sapien. Vivamus ut libero scelerisque sapien condimentum blandit. In mi felis, sollicitudin ac pulvinar eget, placerat sit amet ex. Donec non justo vel enim hendrerit eleifend. Sed nec hendrerit turpis. Sed porttitor erat augue, porta posuere lorem aliquam a.</p>
+          </div>
+        </div>
+       </div> <!-- /.search-result-items -->
+       
+        <div class="numList">
+          <ul class="paginator">
+            <li class="btn-prev"><a></a></li>
+            <li class="active"><a>1</a></li>
+            <li class=""><a>2</a></li>
+            <li class=""><a>3</a></li>
+            <li class="btn-next"><a></a></li>
+          </ul>
+         </div>
+                
+         <div class="total-items">položek celkem <span>37</span></div>
+        
+      </div>  <!-- /.container -->
+      
+    </div>  <!-- /main content section -->
+    
+    
+    <div class="footer">
+      <div class="footer-wrap">
+        <div class="container">   
+          <div class="row footerBg"> 
+            <div class="col-sm-3 footer-menu">
+              <h3>Klientský servis</h3>
+              <ul class="collapsed-menu" id="menu1">
+                <li><a href="">Sazebníky a poplatky</a></li>
+                <li><a href="">Často kladené dotazy</a></li>
+                <li><a href="">Dokumenty ke stažení</a></li>
+                <li><a href="">Kalkulačky</a></li>
+                <li><a href="">Modelování portfolia</a></li>
+                <li><a href="">Oblíbené produkty</a></li>
+                <li class="last"><a href="">Online uzavření smlouvy</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>O společnosti</h3>
+              <ul class="collapsed-menu" id="menu2">
+                <li><a href="">Proč si vybrat CONSEQ</a></li>
+                <li><a href="">Historie společnosti</a></li>
+                <li><a href="">Naši lidé</a></li>
+                <li><a href="">Kariéra</a></li>
+                <li><a href="">Obchodní partneři</a></li>
+                <li><a href="">CONSEQ Investment Management</a></li>
+                <li class="last"><a href="">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu">
+              <h3>Prohlášení</h3>
+              <ul class="collapsed-menu" id="menu3">
+                <li><a href="">Odpovědnost provozovatele</a></li>
+                <li><a href="">Zpracování osobních údajů</a></li>
+                <li class="last"><a href="">Obchodní podmínky</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-3 footer-menu last">
+              <ul class="menu-list">
+                <li><a href="">Můj Conseq</a></li>
+                <li><a href="">Conseq online</a></li>
+                <li><a href="">Kontaktní formulář</a></li>
+                <li class="last"><a href="">Mapa stránek</a></li>
+              </ul>
+              <div class="footer-social">
+                <ul>
+                  <li><a class="facebook" href=""></a></li>
+                  <li><a class="linkedin" href=""></a></li>
+                  <li><a class="twitter" href=""></a></li>
+                </ul>
+              </div>
+              <div class="footer-copyright">Conseq © 2006 - 2016</div>
+            </div>
+          </div>
+        </div>  <!-- /.container -->
+      </div> <!-- /.footer-wrap -->
+    </div> <!-- /.footer -->
+
+    
+  </body>
+</html>
